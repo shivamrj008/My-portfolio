@@ -1,51 +1,46 @@
 /* ==========================================================================
    SHIVAM RAJPUT — LUXURY FASHION-EDITORIAL PORTFOLIO DESIGN SYSTEM
-   Exact GAZU Reference Layout Match • Light Pink & Light Sky Blue Theme
-   Mobile-Perfect Responsive Architecture
+   Premium Pink & Light Blue Palette • Fully Responsive Across All Devices
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,700;1,800&family=Syne:wght@700;800&family=Space+Grotesk:wght@500;600;700&family=Montserrat:wght@800;900&display=swap');
 
 /* --------------------------------------------------------------------------
-   Design Tokens (Custom Properties)
+   1. Design Tokens (Exact Specified Color Palette)
    -------------------------------------------------------------------------- */
 :root {
-  /* Light Pink & Light Sky Blue Pastel Palette */
-  --pink-50: #fdf2f8;
-  --pink-100: #fce7f3;
-  --pink-200: #fbcfe8;
-  --pink-300: #f472b6;
-  --pink-soft: #fae8eb;
+  /* Exact User-Specified Palette */
+  --soft-pink: #F8C8DC;
+  --light-pink: #FCE7F3;
+  --light-blue: #BDE0FE;
+  --sky-blue: #A2D2FF;
+  --off-white: #FAF9F6;
+  --dark-text: #171717;
+  --white: #FFFFFF;
 
-  --blue-50: #f0f9ff;
-  --blue-100: #e0f2fe;
-  --blue-200: #bae6fd;
-  --blue-300: #38bdf8;
-  --blue-soft: #e8f4fc;
+  /* Semantic Theme Mappings */
+  --bg-primary: var(--off-white);
+  --bg-hero: linear-gradient(135deg, #FCE7F3 0%, #FAF9F6 50%, #BDE0FE 100%);
+  --bg-section-tint: #FCE7F3;
+  --bg-section-blue: #BDE0FE;
+  --bg-card: var(--white);
+  --bg-card-pink: #FCE7F3;
+  --bg-dark: var(--dark-text);
+  --bg-dark-secondary: #212121;
 
-  /* Ambient Canvas */
-  --bg-primary: #faf8fb;
-  --bg-gradient: linear-gradient(135deg, #fdf2f8 0%, #f4f8fe 50%, #eff6ff 100%);
-  --bg-warm: #f5f4f8;
-  --bg-card: #ffffff;
-  --bg-card-tint: rgba(255, 255, 255, 0.9);
-  --bg-dark: #0a0a0a;
-  --bg-dark-secondary: #121212;
-  --bg-dark-card: #181818;
+  --text-primary: var(--dark-text);
+  --text-secondary: #383838;
+  --text-muted: #666666;
+  --text-light: #FAF9F6;
+  --text-light-muted: #D1D5DB;
 
-  --text-primary: #0a0a0a;
-  --text-secondary: #374151;
-  --text-muted: #6b7280;
-  --text-light: #ffffff;
-  --text-light-muted: #9ca3af;
+  /* Borders & Hairlines */
+  --border-subtle: rgba(23, 23, 23, 0.1);
+  --border-pink: rgba(248, 200, 220, 0.6);
+  --border-blue: rgba(162, 210, 255, 0.6);
+  --border-dark: rgba(255, 255, 255, 0.15);
 
-  /* Hairline Borders with subtle pink & sky-blue tints */
-  --border-light: rgba(244, 114, 182, 0.2);
-  --border-blue: rgba(56, 189, 248, 0.22);
-  --border-subtle: rgba(10, 10, 10, 0.08);
-  --border-dark: rgba(255, 255, 255, 0.12);
-
-  /* Bold Editorial Typography */
+  /* Typography Stacks */
   --font-display: 'Syne', 'Montserrat', -apple-system, sans-serif;
   --font-display-heavy: 'Montserrat', 'Syne', sans-serif;
   --font-body: 'Plus Jakarta Sans', -apple-system, sans-serif;
@@ -57,7 +52,7 @@
   --max-width: 1400px;
   --container-padding: clamp(1rem, 4vw, 3.5rem);
 
-  /* Transitions */
+  /* Easing */
   --ease-editorial: cubic-bezier(0.16, 1, 0.3, 1);
   --transition-fast: 0.2s var(--ease-editorial);
   --transition-normal: 0.35s var(--ease-editorial);
@@ -65,7 +60,7 @@
 }
 
 /* --------------------------------------------------------------------------
-   Global Reset & Base Rules
+   2. Global Reset & Base Rules
    -------------------------------------------------------------------------- */
 *, *::before, *::after {
   margin: 0;
@@ -82,9 +77,8 @@ html {
 }
 
 body {
-  background: var(--bg-gradient);
-  background-color: var(--bg-primary);
-  color: var(--text-primary);
+  background-color: var(--off-white);
+  color: var(--dark-text);
   font-family: var(--font-body);
   font-weight: 500;
   line-height: 1.6;
@@ -95,7 +89,7 @@ body {
 }
 
 :focus-visible {
-  outline: 2px solid var(--text-primary);
+  outline: 2.5px solid var(--dark-text);
   outline-offset: 3px;
 }
 
@@ -137,7 +131,7 @@ section, [id] {
 }
 
 /* --------------------------------------------------------------------------
-   Typography Utilities
+   3. Typography Utilities
    -------------------------------------------------------------------------- */
 .kicker {
   font-family: var(--font-mono);
@@ -180,7 +174,7 @@ section, [id] {
 }
 
 /* --------------------------------------------------------------------------
-   Buttons & Links
+   4. Buttons & Links (Pink & Light Blue Theme)
    -------------------------------------------------------------------------- */
 .btn {
   display: inline-flex;
@@ -192,7 +186,7 @@ section, [id] {
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  padding: 1.05rem 2.25rem;
+  padding: 1rem 2.25rem;
   min-height: 48px;
   transition: all var(--transition-normal);
   position: relative;
@@ -201,45 +195,55 @@ section, [id] {
   -webkit-tap-highlight-color: transparent;
 }
 
+/* Primary Button: Soft Pink with Dark Text */
 .btn-primary {
-  background-color: var(--bg-dark);
-  color: var(--text-light);
-  border: 1.5px solid var(--bg-dark);
+  background-color: var(--soft-pink);
+  color: var(--dark-text);
+  border: 1.5px solid var(--dark-text);
+  box-shadow: 2px 2px 0px var(--dark-text);
 }
 
 .btn-primary:hover {
-  background-color: transparent;
-  color: var(--text-primary);
-  border-color: var(--text-primary);
+  background-color: var(--sky-blue);
+  color: var(--dark-text);
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0px var(--dark-text);
 }
 
+/* Outline/Secondary Button: Light Blue with Dark Text */
 .btn-outline {
-  background-color: transparent;
-  color: var(--text-primary);
-  border: 1.5px solid var(--text-primary);
+  background-color: var(--light-blue);
+  color: var(--dark-text);
+  border: 1.5px solid var(--dark-text);
+  box-shadow: 2px 2px 0px var(--dark-text);
 }
 
 .btn-outline:hover {
-  background-color: var(--bg-dark);
-  color: var(--text-light);
-  border-color: var(--bg-dark);
+  background-color: var(--soft-pink);
+  color: var(--dark-text);
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0px var(--dark-text);
 }
 
+/* Light Button: Light Pink with Dark Text */
 .btn-light {
-  background-color: var(--text-light);
-  color: var(--bg-dark);
-  border: 1.5px solid var(--text-light);
+  background-color: var(--light-pink);
+  color: var(--dark-text);
+  border: 1.5px solid var(--dark-text);
+  box-shadow: 2px 2px 0px var(--dark-text);
 }
 
 .btn-light:hover {
-  background-color: transparent;
-  color: var(--text-light);
+  background-color: var(--sky-blue);
+  color: var(--dark-text);
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0px var(--dark-text);
 }
 
 .btn-sm {
   padding: 0.65rem 1.35rem;
   font-size: 0.725rem;
-  min-height: 38px;
+  min-height: 40px;
   letter-spacing: 0.14em;
 }
 
@@ -255,11 +259,11 @@ section, [id] {
 }
 
 /* --------------------------------------------------------------------------
-   TOP ANNOUNCEMENT BAR (Matching GAZU)
+   5. TOP ANNOUNCEMENT BAR
    -------------------------------------------------------------------------- */
 .top-announcement {
-  background-color: var(--bg-dark);
-  color: var(--text-light);
+  background-color: var(--dark-text);
+  color: var(--off-white);
   min-height: var(--announcement-height);
   font-family: var(--font-mono);
   font-size: 0.6875rem;
@@ -288,16 +292,16 @@ section, [id] {
 }
 
 .announcement-dot {
-  width: 6px;
-  height: 6px;
-  background-color: #38bdf8; /* Sky blue dot */
+  width: 7px;
+  height: 7px;
+  background-color: var(--sky-blue);
   border-radius: 50%;
   animation: pulse-dot 2s infinite ease-in-out;
 }
 
 @keyframes pulse-dot {
   0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.35; transform: scale(0.85); }
+  50% { opacity: 0.4; transform: scale(0.85); }
 }
 
 .announcement-right {
@@ -309,35 +313,33 @@ section, [id] {
 }
 
 .announcement-right a {
-  color: var(--text-light);
+  color: var(--soft-pink);
   font-weight: 700;
   transition: color var(--transition-fast);
 }
 
 .announcement-right a:hover {
-  color: var(--blue-200);
+  color: var(--sky-blue);
 }
 
 /* --------------------------------------------------------------------------
-   NAVIGATION BAR (Matching GAZU: Left Items | Centered Brand | Right Actions)
+   6. NAVIGATION BAR (Clean Off-White Background)
    -------------------------------------------------------------------------- */
 .site-header {
   position: sticky;
   top: 0;
   width: 100%;
   height: var(--header-height);
-  background-color: rgba(250, 248, 251, 0.94);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  background-color: var(--off-white);
   border-bottom: 1.5px solid var(--border-subtle);
   z-index: 1000;
   transition: background-color var(--transition-normal), border-color var(--transition-normal), box-shadow var(--transition-normal);
 }
 
 .site-header.scrolled {
-  background-color: rgba(255, 255, 255, 0.98);
-  border-bottom-color: var(--border-light);
-  box-shadow: 0 4px 24px rgba(244, 114, 182, 0.08);
+  background-color: rgba(250, 249, 246, 0.98);
+  border-bottom-color: var(--border-pink);
+  box-shadow: 0 4px 20px rgba(248, 200, 220, 0.25);
 }
 
 .nav-wrapper {
@@ -359,7 +361,7 @@ section, [id] {
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--text-secondary);
+  color: var(--dark-text);
   position: relative;
   padding: 0.35rem 0;
   transition: color var(--transition-fast);
@@ -371,8 +373,8 @@ section, [id] {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 2px;
-  background-color: var(--text-primary);
+  height: 2.5px;
+  background-color: var(--soft-pink);
   transform: scaleX(0);
   transform-origin: right;
   transition: transform var(--transition-normal);
@@ -380,7 +382,7 @@ section, [id] {
 
 .nav-link:hover,
 .nav-link.active {
-  color: var(--text-primary);
+  color: var(--dark-text);
 }
 
 .nav-link:hover::after,
@@ -397,11 +399,11 @@ section, [id] {
 }
 
 .brand-monogram {
-  width: 32px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
   object-fit: cover;
-  border: 1px solid var(--border-light);
+  border: 1.5px solid var(--border-pink);
 }
 
 .brand-title {
@@ -410,7 +412,7 @@ section, [id] {
   font-size: 1.75rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--text-primary);
+  color: var(--dark-text);
 }
 
 .nav-right {
@@ -421,28 +423,28 @@ section, [id] {
 }
 
 .nav-social-link {
-  color: var(--text-secondary);
+  color: var(--dark-text);
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
   border: 1.5px solid var(--border-subtle);
-  background-color: #ffffff;
+  background-color: var(--white);
   transition: all var(--transition-fast);
 }
 
 .nav-social-link:hover {
-  color: var(--text-primary);
-  border-color: var(--blue-300);
-  background-color: var(--blue-50);
+  color: var(--dark-text);
+  border-color: var(--sky-blue);
+  background-color: var(--light-blue);
   transform: translateY(-2px);
 }
 
 .nav-social-link svg {
-  width: 15px;
-  height: 15px;
+  width: 16px;
+  height: 16px;
 }
 
 .nav-contact-link {
@@ -452,17 +454,18 @@ section, [id] {
   letter-spacing: 0.16em;
   text-transform: uppercase;
   padding: 0.55rem 1.15rem;
-  border: 1.5px solid var(--text-primary);
-  color: var(--text-primary);
-  background-color: transparent;
+  border: 1.5px solid var(--dark-text);
+  color: var(--dark-text);
+  background-color: var(--light-blue);
   transition: all var(--transition-fast);
 }
 
 .nav-contact-link:hover {
-  background-color: var(--bg-dark);
-  color: var(--text-light);
+  background-color: var(--soft-pink);
+  color: var(--dark-text);
 }
 
+/* Mobile Hamburger Toggle */
 .mobile-toggle {
   display: none;
   flex-direction: column;
@@ -480,7 +483,7 @@ section, [id] {
   display: block;
   width: 24px;
   height: 2px;
-  background-color: var(--text-primary);
+  background-color: var(--dark-text);
   transition: transform var(--transition-normal), opacity var(--transition-fast);
   transform-origin: center;
 }
@@ -505,8 +508,8 @@ section, [id] {
   width: 100%;
   height: 100vh;
   height: 100dvh;
-  background: var(--bg-gradient);
-  background-color: var(--bg-primary);
+  background-color: var(--off-white);
+  background: linear-gradient(180deg, var(--off-white) 0%, var(--light-pink) 100%);
   z-index: 999;
   display: flex;
   flex-direction: column;
@@ -537,13 +540,19 @@ section, [id] {
   font-size: clamp(1.5rem, 6vw, 2.25rem);
   font-weight: 800;
   text-transform: uppercase;
-  color: var(--text-primary);
+  color: var(--dark-text);
   letter-spacing: -0.02em;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid var(--border-light);
+  border-bottom: 1.5px solid var(--border-subtle);
   padding-bottom: 0.85rem;
+}
+
+.mobile-nav-link:hover,
+.mobile-nav-link:focus-visible {
+  color: var(--dark-text);
+  border-bottom-color: var(--soft-pink);
 }
 
 .mobile-nav-footer {
@@ -551,7 +560,7 @@ section, [id] {
   flex-direction: column;
   gap: 1.25rem;
   padding-top: 1.5rem;
-  border-top: 1px solid var(--border-light);
+  border-top: 1.5px solid var(--border-subtle);
 }
 
 .mobile-socials {
@@ -566,7 +575,7 @@ section, [id] {
 }
 
 /* --------------------------------------------------------------------------
-   HERO SECTION — EXACT GAZU COMPOSITION MATCH
+   7. HERO SECTION (Pink & Light Blue Accent Blend)
    -------------------------------------------------------------------------- */
 .hero-section {
   position: relative;
@@ -577,10 +586,10 @@ section, [id] {
   overflow: hidden;
   border-bottom: 1.5px solid var(--border-subtle);
   padding: 0;
-  background: var(--bg-gradient);
+  background: var(--bg-hero);
 }
 
-/* 1. Top-Left Tagline (Matches "FASHION THAT MOVES WITH YOU") */
+/* Top-Left Tagline */
 .hero-top-left {
   position: absolute;
   top: clamp(2rem, 5vw, 4.5rem);
@@ -596,13 +605,13 @@ section, [id] {
   letter-spacing: 0.16em;
   text-transform: uppercase;
   line-height: 1.5;
-  color: var(--text-primary);
-  border-bottom: 1.5px solid var(--text-primary);
+  color: var(--dark-text);
+  border-bottom: 2px solid var(--dark-text);
   padding-bottom: 0.5rem;
   display: inline-block;
 }
 
-/* 2. Massive Watermark Typography Behind Image (Matches "G A Z U") */
+/* Giant Watermark Behind Image */
 .hero-watermark {
   position: absolute;
   top: 50%;
@@ -613,7 +622,7 @@ section, [id] {
   font-weight: 900;
   letter-spacing: -0.05em;
   text-transform: uppercase;
-  color: rgba(10, 10, 10, 0.08); /* Crisp visible watermark */
+  color: rgba(23, 23, 23, 0.08);
   user-select: none;
   pointer-events: none;
   white-space: nowrap;
@@ -623,7 +632,7 @@ section, [id] {
   width: 100%;
 }
 
-/* 3. Center Photograph Cutout (Overlaps the Watermark like the GAZU Model) */
+/* Center Photograph Cutout */
 .hero-image-wrap {
   position: relative;
   display: flex;
@@ -632,7 +641,6 @@ section, [id] {
   z-index: 5;
   width: 100%;
   height: clamp(480px, 74vh, 740px);
-  pointer-events: auto;
 }
 
 .hero-portrait {
@@ -646,10 +654,10 @@ section, [id] {
 }
 
 .hero-image-wrap:hover .hero-portrait {
-  filter: grayscale(85%) contrast(1.1) brightness(1.04);
+  filter: grayscale(70%) contrast(1.1) brightness(1.04);
 }
 
-/* 4. Bottom-Left Dual CTAs (Matches "SHOP NOW" & "EXPLORE NEW IN") */
+/* Bottom-Left Dual CTAs */
 .hero-bottom-left {
   position: absolute;
   bottom: clamp(2rem, 5vw, 4.5rem);
@@ -667,20 +675,20 @@ section, [id] {
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--text-primary);
-  border-bottom: 1.5px solid var(--text-primary);
+  color: var(--dark-text);
+  border-bottom: 2px solid var(--dark-text);
   padding-bottom: 0.25rem;
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  transition: opacity var(--transition-fast);
+  transition: color var(--transition-fast);
 }
 
 .hero-text-link:hover {
-  opacity: 0.7;
+  color: var(--text-muted);
 }
 
-/* 5. Bottom-Right Meta Badge (Matches "NEW COLLECTION 2024") */
+/* Bottom-Right Meta Badge */
 .hero-bottom-right {
   position: absolute;
   bottom: clamp(2rem, 5vw, 4.5rem);
@@ -690,7 +698,7 @@ section, [id] {
   flex-direction: column;
   align-items: flex-start;
   gap: 0.2rem;
-  border-top: 1.5px solid var(--text-primary);
+  border-top: 2px solid var(--dark-text);
   padding-top: 0.5rem;
 }
 
@@ -708,7 +716,7 @@ section, [id] {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--text-primary);
+  color: var(--dark-text);
 }
 
 .hero-meta-year {
@@ -720,11 +728,11 @@ section, [id] {
 }
 
 /* --------------------------------------------------------------------------
-   DEVELOPER CATEGORY STRIP (GAZU STRIP: MEN / WOMEN / KIDS)
+   8. DEVELOPER CATEGORY STRIP (GAZU STRIP)
    -------------------------------------------------------------------------- */
 .category-strip {
-  background-color: var(--bg-dark);
-  color: var(--text-light);
+  background-color: var(--dark-text);
+  color: var(--white);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   position: relative;
@@ -733,18 +741,19 @@ section, [id] {
 
 .category-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .category-card {
-  padding: clamp(2rem, 4vw, 3.5rem) clamp(1.5rem, 3vw, 2.5rem);
+  padding: clamp(1.75rem, 3.5vw, 3.5rem) clamp(1rem, 2.5vw, 2.5rem);
   border-right: 1px solid var(--border-dark);
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: clamp(0.75rem, 1.8vw, 1.5rem);
   transition: background-color var(--transition-normal);
   position: relative;
   overflow: hidden;
+  min-width: 0;
 }
 
 .category-card:last-child {
@@ -756,10 +765,10 @@ section, [id] {
 }
 
 .category-thumb-wrap {
-  width: 72px;
-  height: 88px;
-  background-color: #1e1e1e;
-  border: 1px solid var(--border-dark);
+  width: 76px;
+  height: 92px;
+  background-color: #242424;
+  border: 1.5px solid var(--border-dark);
   flex-shrink: 0;
   overflow: hidden;
   display: flex;
@@ -783,15 +792,18 @@ section, [id] {
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .category-title {
   font-family: var(--font-display);
-  font-size: 1.35rem;
+  font-size: clamp(1.05rem, 1.8vw, 1.35rem);
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: -0.01em;
-  color: var(--text-light);
+  color: var(--white);
+  word-break: break-word;
 }
 
 .category-desc {
@@ -806,22 +818,28 @@ section, [id] {
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--text-light);
+  color: var(--soft-pink);
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
   margin-top: 0.35rem;
-  border-bottom: 1px solid var(--border-dark);
+  border-bottom: 1.5px solid var(--soft-pink);
   padding-bottom: 0.2rem;
   width: fit-content;
+  transition: color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.category-link:hover {
+  color: var(--sky-blue);
+  border-color: var(--sky-blue);
 }
 
 /* --------------------------------------------------------------------------
-   NEW VIBES SECTION (Matches GAZU Split Banner)
+   9. NEW VIBES SECTION (Split Banner)
    -------------------------------------------------------------------------- */
 .vibes-banner {
-  background-color: var(--bg-primary);
-  color: var(--text-primary);
+  background-color: var(--off-white);
+  color: var(--dark-text);
   padding: clamp(4rem, 8vw, 7.5rem) 0;
   position: relative;
   overflow: hidden;
@@ -854,7 +872,7 @@ section, [id] {
 .vibes-title {
   font-family: var(--font-display-heavy);
   font-size: clamp(3rem, 7vw, 6rem);
-  color: var(--text-primary);
+  color: var(--dark-text);
   line-height: 0.92;
   font-weight: 900;
   text-transform: uppercase;
@@ -880,9 +898,9 @@ section, [id] {
   width: 100%;
   max-width: 480px;
   aspect-ratio: 1 / 1.15;
-  background-color: #ffffff;
-  border: 1.5px solid var(--border-light);
-  box-shadow: 0 16px 40px rgba(244, 114, 182, 0.08);
+  background-color: var(--white);
+  border: 1.5px solid var(--border-pink);
+  box-shadow: 0 16px 40px rgba(248, 200, 220, 0.3);
   position: relative;
   overflow: hidden;
   display: flex;
@@ -898,10 +916,10 @@ section, [id] {
 }
 
 /* --------------------------------------------------------------------------
-   TRUST & VALUE BADGES STRIP (Matches GAZU Feature Strip)
+   10. TRUST & VALUE BADGES STRIP (Highlighted Light Blue Section)
    -------------------------------------------------------------------------- */
 .trust-strip {
-  background-color: #ffffff;
+  background-color: var(--light-blue);
   border-bottom: 1.5px solid var(--border-subtle);
   padding: clamp(2rem, 4vw, 2.75rem) 0;
 }
@@ -920,7 +938,7 @@ section, [id] {
 
 .trust-icon {
   font-size: 1.65rem;
-  color: var(--text-primary);
+  color: var(--dark-text);
   flex-shrink: 0;
 }
 
@@ -932,23 +950,23 @@ section, [id] {
 .trust-title {
   font-family: var(--font-mono);
   font-size: 0.75rem;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--text-primary);
+  color: var(--dark-text);
 }
 
 .trust-desc {
   font-size: 0.8125rem;
-  color: var(--text-muted);
+  color: var(--text-secondary);
 }
 
 /* --------------------------------------------------------------------------
-   SELECTED WORK (Matches "BEST OF GAZU" Product Grid)
+   11. SELECTED WORK (White or Very Light Pink Cards)
    -------------------------------------------------------------------------- */
 .projects-section {
   padding: clamp(4.5rem, 9vw, 8rem) 0;
-  background-color: var(--bg-primary);
+  background-color: var(--off-white);
   border-bottom: 1.5px solid var(--border-subtle);
 }
 
@@ -969,7 +987,7 @@ section, [id] {
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: -0.03em;
-  color: var(--text-primary);
+  color: var(--dark-text);
 }
 
 .section-header-right-link {
@@ -978,37 +996,39 @@ section, [id] {
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  border-bottom: 1.5px solid var(--text-primary);
+  border-bottom: 1.5px solid var(--dark-text);
   padding-bottom: 0.2rem;
-  color: var(--text-primary);
+  color: var(--dark-text);
 }
 
 /* 4-Column Product Grid Layout */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: clamp(1rem, 2vw, 1.75rem);
 }
 
 .project-card {
-  background-color: #ffffff;
+  background-color: var(--white);
   border: 1.5px solid var(--border-subtle);
   display: flex;
   flex-direction: column;
   transition: transform var(--transition-normal), border-color var(--transition-normal), box-shadow var(--transition-normal);
   position: relative;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .project-card:hover {
   transform: translateY(-4px);
-  border-color: var(--pink-300);
-  box-shadow: 0 16px 36px rgba(244, 114, 182, 0.1);
+  border-color: var(--soft-pink);
+  box-shadow: 0 16px 36px rgba(248, 200, 220, 0.4);
 }
 
 .project-preview {
   width: 100%;
   aspect-ratio: 1 / 1.15;
-  background-color: #f7f6f9;
+  background-color: #F8F7FA;
   border-bottom: 1px solid var(--border-subtle);
   position: relative;
   overflow: hidden;
@@ -1021,23 +1041,23 @@ section, [id] {
   position: absolute;
   top: 12px;
   right: 12px;
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   z-index: 5;
   cursor: pointer;
   border: 1px solid rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s;
+  transition: transform 0.2s, background-color 0.2s;
 }
 
 .project-wishlist-icon:hover {
   transform: scale(1.15);
-  background-color: var(--pink-100);
+  background-color: var(--light-pink);
 }
 
 .project-preview-mockup {
@@ -1047,8 +1067,8 @@ section, [id] {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: linear-gradient(135deg, #181818 0%, #0d0d0d 100%);
-  color: var(--text-light);
+  background: linear-gradient(135deg, #202020 0%, #121212 100%);
+  color: var(--white);
   transition: transform var(--transition-slow);
 }
 
@@ -1078,7 +1098,7 @@ section, [id] {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: #38bdf8;
+  background-color: var(--sky-blue);
 }
 
 .mockup-center {
@@ -1141,7 +1161,7 @@ section, [id] {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: -0.01em;
-  color: var(--text-primary);
+  color: var(--dark-text);
 }
 
 .project-desc {
@@ -1165,35 +1185,40 @@ section, [id] {
   font-family: var(--font-mono);
   font-size: 0.65rem;
   letter-spacing: 0.1em;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   padding: 0.25rem 0.55rem;
-  background-color: var(--pink-50);
-  border: 1px solid var(--border-light);
-  color: var(--text-secondary);
+  background-color: var(--light-pink);
+  border: 1px solid var(--border-pink);
+  color: var(--dark-text);
 }
 
 .project-actions {
   display: flex;
-  gap: 0.65rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
   margin-top: auto;
   padding-top: 1rem;
   border-top: 1px solid var(--border-subtle);
 }
 
 .project-actions .btn {
-  flex: 1;
-  padding: 0.55rem 0.85rem;
+  flex: 1 1 110px;
+  padding: 0.55rem 0.65rem;
   font-size: 0.6875rem;
-  min-height: 36px;
+  min-height: 38px;
+  letter-spacing: 0.12em;
+  white-space: nowrap;
+  text-align: center;
+  justify-content: center;
 }
 
 /* --------------------------------------------------------------------------
-   SKILLS & ABOUT SECTIONS
+   12. ABOUT SECTION
    -------------------------------------------------------------------------- */
 .about-section {
   padding: clamp(4.5rem, 9vw, 8rem) 0;
-  background-color: #ffffff;
+  background-color: var(--white);
   border-bottom: 1.5px solid var(--border-subtle);
 }
 
@@ -1212,7 +1237,7 @@ section, [id] {
 
 .about-headline {
   font-size: clamp(2.25rem, 4.8vw, 4.25rem);
-  color: var(--text-primary);
+  color: var(--dark-text);
 }
 
 .about-narrative {
@@ -1228,14 +1253,14 @@ section, [id] {
 
 .editorial-specs {
   border: 1.5px solid var(--border-subtle);
-  background-color: var(--blue-50);
+  background-color: var(--light-blue);
 }
 
 .spec-row {
   display: grid;
   grid-template-columns: 140px 1fr;
   padding: 1.15rem 1.5rem;
-  border-bottom: 1px solid var(--border-blue);
+  border-bottom: 1px solid rgba(23, 23, 23, 0.08);
   align-items: center;
 }
 
@@ -1248,19 +1273,22 @@ section, [id] {
   font-size: 0.6875rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--text-muted);
-  font-weight: 700;
+  color: var(--text-secondary);
+  font-weight: 800;
 }
 
 .spec-value {
   font-size: 0.95rem;
-  font-weight: 600;
-  color: var(--text-primary);
+  font-weight: 700;
+  color: var(--dark-text);
 }
 
+/* --------------------------------------------------------------------------
+   13. SKILLS SECTION
+   -------------------------------------------------------------------------- */
 .skills-section {
   padding: clamp(4.5rem, 9vw, 8rem) 0;
-  background-color: var(--bg-primary);
+  background-color: var(--off-white);
   border-bottom: 1.5px solid var(--border-subtle);
 }
 
@@ -1271,7 +1299,7 @@ section, [id] {
 }
 
 .skill-category-card {
-  background-color: #ffffff;
+  background-color: var(--white);
   border: 1.5px solid var(--border-subtle);
   padding: 2.25rem 1.75rem;
   display: flex;
@@ -1282,7 +1310,7 @@ section, [id] {
 
 .skill-category-card:hover {
   transform: translateY(-4px);
-  border-color: var(--blue-300);
+  border-color: var(--sky-blue);
 }
 
 .skill-cat-header {
@@ -1307,7 +1335,7 @@ section, [id] {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: -0.01em;
-  color: var(--text-primary);
+  color: var(--dark-text);
 }
 
 .skill-tags-list {
@@ -1324,7 +1352,7 @@ section, [id] {
   font-size: 0.8125rem;
   color: var(--text-secondary);
   padding: 0.45rem 0;
-  border-bottom: 1px solid rgba(10, 10, 10, 0.05);
+  border-bottom: 1px solid rgba(23, 23, 23, 0.06);
 }
 
 .skill-tag-item:last-child {
@@ -1333,22 +1361,22 @@ section, [id] {
 
 .skill-tag-item span:first-child {
   font-weight: 600;
-  color: var(--text-primary);
+  color: var(--dark-text);
 }
 
 .skill-level-dot {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: var(--text-primary);
+  background-color: var(--sky-blue);
 }
 
 /* --------------------------------------------------------------------------
-   CONTACT SECTION
+   14. CONTACT SECTION
    -------------------------------------------------------------------------- */
 .contact-section {
   padding: clamp(4.5rem, 9vw, 8rem) 0;
-  background-color: #ffffff;
+  background-color: var(--white);
   border-bottom: 1.5px solid var(--border-subtle);
 }
 
@@ -1366,9 +1394,9 @@ section, [id] {
 
 .contact-headline {
   font-size: clamp(2.5rem, 5.5vw, 4.6rem);
-  color: var(--text-primary);
+  color: var(--dark-text);
   line-height: 0.95;
-  font-weight: 800;
+  font-weight: 900;
 }
 
 .contact-subtext {
@@ -1403,7 +1431,7 @@ section, [id] {
 .contact-val {
   font-size: 1.15rem;
   font-weight: 700;
-  color: var(--text-primary);
+  color: var(--dark-text);
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -1416,7 +1444,7 @@ section, [id] {
 
 .contact-form-wrap {
   border: 1.5px solid var(--border-subtle);
-  background: var(--bg-gradient);
+  background-color: var(--light-pink);
   padding: clamp(1.75rem, 4vw, 3rem);
 }
 
@@ -1437,7 +1465,7 @@ section, [id] {
   font-size: 0.725rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--text-secondary);
+  color: var(--dark-text);
   font-weight: 700;
 }
 
@@ -1445,11 +1473,11 @@ section, [id] {
 .form-textarea {
   width: 100%;
   padding: 0.95rem 1.1rem;
-  background-color: #ffffff;
+  background-color: var(--white);
   border: 1.5px solid var(--border-subtle);
   font-family: var(--font-body);
-  font-size: 1rem; /* Prevents iOS auto-zoom */
-  color: var(--text-primary);
+  font-size: 1rem; /* 16px to prevent iOS auto-zoom */
+  color: var(--dark-text);
   border-radius: 0;
   transition: border-color var(--transition-fast);
 }
@@ -1457,7 +1485,7 @@ section, [id] {
 .form-input:focus,
 .form-textarea:focus {
   outline: none;
-  border-color: var(--text-primary);
+  border-color: var(--dark-text);
 }
 
 .form-textarea {
@@ -1476,25 +1504,26 @@ section, [id] {
 
 .form-status.success {
   display: block;
-  background-color: #f0fdf4;
-  border: 1px solid #bbf7d0;
+  background-color: #F0FDF4;
+  border: 1px solid #BBF7D0;
   color: #166534;
 }
 
 .form-status.error {
   display: block;
-  background-color: #fef2f2;
-  border: 1px solid #fecaca;
-  color: #991b1b;
+  background-color: #FEF2F2;
+  border: 1px solid #FECACA;
+  color: #991B1B;
 }
 
 /* --------------------------------------------------------------------------
-   FOOTER
+   15. FOOTER (Dark Background with Pink & Light Blue Accents)
    -------------------------------------------------------------------------- */
 .site-footer {
-  background-color: var(--bg-dark);
-  color: var(--text-light);
+  background-color: var(--dark-text);
+  color: var(--off-white);
   padding: 3.5rem 0;
+  border-top: 2px solid var(--soft-pink);
 }
 
 .footer-inner {
@@ -1510,8 +1539,8 @@ section, [id] {
   font-size: 0.75rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--text-light);
-  font-weight: 700;
+  color: var(--soft-pink);
+  font-weight: 800;
 }
 
 .footer-center {
@@ -1525,13 +1554,13 @@ section, [id] {
   font-size: 0.725rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--text-light-muted);
+  color: var(--light-blue);
   font-weight: 600;
   transition: color var(--transition-fast);
 }
 
 .footer-link:hover {
-  color: var(--text-light);
+  color: var(--soft-pink);
 }
 
 .footer-right {
@@ -1543,11 +1572,11 @@ section, [id] {
 }
 
 /* --------------------------------------------------------------------------
-   VIEWPORT REVEAL ANIMATIONS
+   16. VIEWPORT REVEAL ANIMATIONS
    -------------------------------------------------------------------------- */
 .reveal {
   opacity: 0;
-  transform: translateY(22px);
+  transform: translateY(20px);
   transition: opacity 0.7s var(--ease-editorial), transform 0.7s var(--ease-editorial);
   will-change: opacity, transform;
 }
@@ -1563,7 +1592,7 @@ section, [id] {
 .delay-4 { transition-delay: 0.4s; }
 
 /* --------------------------------------------------------------------------
-   CUSTOM DESKTOP CURSOR
+   17. CUSTOM DESKTOP CURSOR
    -------------------------------------------------------------------------- */
 .cursor-dot,
 .cursor-ring {
@@ -1580,14 +1609,14 @@ section, [id] {
 .cursor-dot {
   width: 6px;
   height: 6px;
-  background-color: var(--text-primary);
+  background-color: var(--dark-text);
   transform: translate(-50%, -50%);
 }
 
 .cursor-ring {
   width: 32px;
   height: 32px;
-  border: 1px solid rgba(10, 10, 10, 0.4);
+  border: 1.5px solid var(--soft-pink);
   transform: translate(-50%, -50%);
   transition: width 0.25s ease, height 0.25s ease, border-color 0.25s ease, background-color 0.25s ease;
 }
@@ -1595,8 +1624,8 @@ section, [id] {
 .cursor-ring.hovering {
   width: 48px;
   height: 48px;
-  border-color: var(--pink-300);
-  background-color: rgba(244, 114, 182, 0.08);
+  border-color: var(--sky-blue);
+  background-color: rgba(162, 210, 255, 0.15);
 }
 
 @media (pointer: coarse), (max-width: 992px) {
@@ -1607,24 +1636,81 @@ section, [id] {
 }
 
 /* --------------------------------------------------------------------------
-   RESPONSIVE DESIGN (FIXING "CONTENT IDHAR-UDHAR" ON MOBILE)
+   18. RESPONSIVE BREAKPOINTS (Desktop, Tablet, Large Mobile, Small Mobile)
    -------------------------------------------------------------------------- */
 
-/* Tablet & Smaller Screens (< 1200px) */
-@media (max-width: 1200px) {
+/* TABLET BREAKPOINT (768px – 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
   .projects-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
   }
+
   .skills-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
   .trust-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .category-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .category-card {
+    padding: 1.25rem 0.75rem;
+    gap: 0.65rem;
+  }
+
+  .category-thumb-wrap {
+    width: 50px;
+    height: 64px;
+    flex-shrink: 0;
+  }
+
+  .category-title {
+    font-size: 0.925rem;
+  }
+
+  .category-desc {
+    font-size: 0.75rem;
+    line-height: 1.35;
+  }
+
+  .category-link {
+    font-size: 0.6875rem;
+  }
+
+  .hero-watermark {
+    font-size: clamp(4.5rem, 13vw, 8rem);
+  }
+
+  .hero-image-wrap {
+    height: clamp(340px, 50vh, 480px);
   }
 }
 
-/* Tablets & Mobile (< 992px) */
-@media (max-width: 992px) {
+/* LAPTOP / COMPACT DESKTOP (1025px – 1280px) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+
+  .category-card {
+    padding: 2rem 1.25rem;
+    gap: 1rem;
+  }
+
+  .category-thumb-wrap {
+    width: 64px;
+    height: 80px;
+  }
+}
+
+/* ALL MOBILE & TABLET PORTRAIT (< 1024px) */
+@media (max-width: 1024px) {
   .nav-left,
   .nav-right .nav-contact-link {
     display: none;
@@ -1633,11 +1719,14 @@ section, [id] {
   .mobile-toggle {
     display: flex;
   }
+}
 
-  /* Refactor Hero into clean, centered vertical stack */
+/* LARGE MOBILE & BELOW (< 768px) */
+@media (max-width: 767px) {
+  /* Refactor Hero into clean, unclipped vertical stack */
   .hero-section {
     min-height: auto;
-    padding: 2.5rem 1rem 3.5rem;
+    padding: 2.25rem 1rem 3.5rem;
     flex-direction: column;
     text-align: center;
   }
@@ -1650,17 +1739,18 @@ section, [id] {
   }
 
   .hero-editorial-kicker {
-    border-bottom: none;
-    font-size: 0.875rem;
+    border-bottom: 1.5px solid var(--dark-text);
+    font-size: 0.8125rem;
+    padding-bottom: 0.35rem;
   }
 
   .hero-watermark {
-    font-size: clamp(4.5rem, 18vw, 8.5rem);
+    font-size: clamp(3.5rem, 16vw, 6.5rem);
     top: 48%;
   }
 
   .hero-image-wrap {
-    height: clamp(340px, 52vh, 480px);
+    height: clamp(280px, 46vh, 400px);
     margin: 0.5rem auto 1.5rem;
   }
 
@@ -1668,8 +1758,15 @@ section, [id] {
     position: static;
     justify-content: center;
     width: 100%;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
     gap: 1rem;
+    flex-direction: column;
+  }
+
+  .hero-bottom-left .btn,
+  .hero-bottom-left .hero-text-link {
+    width: 100%;
+    justify-content: center;
   }
 
   .hero-bottom-right {
@@ -1697,26 +1794,40 @@ section, [id] {
   .vibes-grid {
     grid-template-columns: 1fr;
     text-align: center;
-    gap: 3rem;
+    gap: 2.5rem;
   }
 
   .vibes-left {
     align-items: center;
   }
 
+  .trust-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
   .about-layout {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2.5rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
   }
 
   .contact-layout {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2.5rem;
   }
 }
 
-/* Mobile Phones (< 640px) */
-@media (max-width: 640px) {
+/* SMALL MOBILE (320px – 480px) */
+@media (max-width: 480px) {
   :root {
     --header-height: 64px;
   }
@@ -1731,75 +1842,62 @@ section, [id] {
     text-align: center;
   }
 
+  .brand-title {
+    font-size: 1.25rem;
+    letter-spacing: 0.06em;
+  }
+
+  .brand-monogram {
+    width: 28px;
+    height: 28px;
+  }
+
+  .nav-right .nav-social-link {
+    display: none;
+  }
+
   .hero-section {
-    padding: 1.5rem 1rem 2.5rem;
+    padding: 1.5rem 0.85rem 2.5rem;
   }
 
   .hero-watermark {
-    font-size: clamp(3.5rem, 17vw, 6rem);
+    font-size: clamp(2.85rem, 14vw, 4.8rem);
   }
 
   .hero-image-wrap {
-    height: clamp(280px, 46vh, 380px);
+    height: clamp(240px, 40vh, 340px);
   }
 
-  .hero-bottom-left {
-    flex-direction: column;
-    width: 100%;
-    gap: 0.85rem;
-  }
-
-  .hero-bottom-left .btn,
-  .hero-bottom-left .hero-text-link {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .trust-grid {
-    grid-template-columns: 1fr;
-    gap: 1.25rem;
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
-  .skills-grid {
-    grid-template-columns: 1fr;
+  .btn {
+    padding: 0.85rem 1.25rem;
+    font-size: 0.75rem;
+    min-height: 48px;
   }
 
   .spec-row {
     grid-template-columns: 1fr;
     gap: 0.25rem;
-    padding: 0.95rem 1.15rem;
+    padding: 0.85rem 1rem;
+  }
+
+  .contact-form-wrap {
+    padding: 1.5rem 1rem;
   }
 
   .footer-inner {
     flex-direction: column;
     text-align: center;
-    gap: 1.5rem;
+    gap: 1.25rem;
   }
 
   .footer-center {
     justify-content: center;
-    gap: 1.25rem;
-  }
-}
-
-/* Extra Small Phones (< 380px) */
-@media (max-width: 380px) {
-  .brand-title {
-    font-size: 1.35rem;
-  }
-  .btn {
-    padding: 0.9rem 1.25rem;
-    font-size: 0.75rem;
+    gap: 1rem;
   }
 }
 
 /* --------------------------------------------------------------------------
-   PREFERS REDUCED MOTION SUPPORT
+   19. REDUCED MOTION SUPPORT (Accessibility)
    -------------------------------------------------------------------------- */
 @media (prefers-reduced-motion: reduce) {
   html {
