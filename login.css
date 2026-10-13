@@ -27,6 +27,7 @@
 body {
   min-height: 100vh;
   font-family: var(--font-body);
+  background: linear-gradient(135deg, #fdf2f8 0%, #f4f8fe 50%, #eff6ff 100%);
   background-color: var(--bg-primary);
   color: var(--text-primary);
   display: flex;
@@ -42,10 +43,10 @@ body {
 
 .login-box {
   background-color: var(--bg-card);
-  border: 1px solid var(--border-light);
+  border: 1.5px solid rgba(244, 114, 182, 0.25);
   padding: clamp(2.5rem, 5vw, 3.5rem);
   text-align: center;
-  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 16px 45px rgba(244, 114, 182, 0.12);
 }
 
 .logo {

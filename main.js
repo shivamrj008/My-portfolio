@@ -138,6 +138,7 @@
         card.className = `project-card reveal ${delayClass}`;
         card.innerHTML = `
           <div class="project-preview">
+            <span class="project-wishlist-icon" title="Save Project" role="button" tabindex="0">🤍</span>
             <div class="project-preview-mockup">
               <div class="mockup-header">
                 <span class="mockup-status-dot">${escapeHtml(proj.previewHeader || 'ACTIVE PROJECT')}</span>
@@ -182,6 +183,15 @@
             </div>
           </div>
         `;
+
+        const heartBtn = card.querySelector('.project-wishlist-icon');
+        if (heartBtn) {
+          heartBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            heartBtn.textContent = heartBtn.textContent === '🤍' ? '❤️' : '🤍';
+          });
+        }
+
         projectsContainer.appendChild(card);
       });
     }

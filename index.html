@@ -8,7 +8,7 @@
       name="description"
       content="Portfolio of Shivam Rajput, Web Developer & Software Developer based in India. Minimalist fashion-editorial portfolio showcasing selected projects, technical expertise, and development journey."
     />
-    <meta name="theme-color" content="#0a0a0a" />
+    <meta name="theme-color" content="#fdf2f8" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="lc.png" />
@@ -25,13 +25,13 @@
     <div class="cursor-ring" aria-hidden="true"></div>
 
     <!-- ======================================================================
-         1. TOP ANNOUNCEMENT BAR
+         1. TOP ANNOUNCEMENT BAR (GAZU Style)
          ====================================================================== -->
     <div class="top-announcement">
       <div class="container announcement-inner">
         <div class="announcement-left">
           <span class="announcement-dot" aria-hidden="true"></span>
-          <span>AVAILABLE FOR SELECT PROJECTS</span>
+          <span>AVAILABLE FOR SELECT PROJECTS &bull; 2026</span>
         </div>
         <div class="announcement-right">
           <span>BASED IN INDIA</span>
@@ -42,7 +42,7 @@
     </div>
 
     <!-- ======================================================================
-         2. NAVIGATION BAR
+         2. NAVIGATION BAR (GAZU Style: Left Nav | Center Brand | Right Actions)
          ====================================================================== -->
     <header class="site-header">
       <div class="container nav-wrapper">
@@ -54,9 +54,9 @@
           <a href="#skills" class="nav-link">SKILLS</a>
         </nav>
 
-        <!-- Center Brand -->
+        <!-- Center Brand (Bold GAZU-Style "SHIVAM") -->
         <div class="nav-brand">
-          <img src="lc.png" alt="Shivam Monogram" class="brand-monogram" width="28" height="28" />
+          <img src="lc.png" alt="Shivam Monogram" class="brand-monogram" width="32" height="32" />
           <a href="#hero" class="brand-title">SHIVAM</a>
         </div>
 
@@ -151,132 +151,352 @@
     </div>
 
     <!-- ======================================================================
-         3. HERO SECTION (GAZU COMPOSITION)
+         3. HERO SECTION — EXACT GAZU 4-CORNER COMPOSITION
          ====================================================================== -->
     <section class="hero-section" id="hero">
-      <!-- Massive Oversized Typography Behind Image -->
-      <div class="hero-watermark" aria-hidden="true">DEVELOPER</div>
+      <!-- 1. Top-Left Tagline (Matches GAZU "FASHION THAT MOVES WITH YOU") -->
+      <div class="hero-top-left reveal">
+        <p class="hero-editorial-kicker" id="hero-kicker">
+          BUILDING<br />
+          DIGITAL EXPERIENCES<br />
+          WITH YOU.
+        </p>
+      </div>
 
-      <div class="container hero-grid">
-        <!-- Left Editorial Column -->
-        <div class="hero-content">
-          <span class="kicker reveal" id="hero-kicker">BUILDING DIGITAL EXPERIENCES</span>
+      <!-- 2. Massive Oversized Typography (Matches Giant "G A Z U") -->
+      <div class="hero-watermark" aria-hidden="true">SHIVAM</div>
 
-          <h1 class="hero-tagline title-editorial reveal delay-1" id="hero-tagline">
-            I design and develop modern websites that combine thoughtful design, clean code, and smooth interactions.
-          </h1>
+      <!-- 3. Center Cutout Photograph (Overlaps the Watermark like the Walking Model) -->
+      <div class="hero-image-wrap reveal delay-1">
+        <img
+          src="myphoto.png"
+          alt="Shivam Rajput - Web Developer"
+          class="hero-portrait"
+          width="620"
+          height="780"
+          loading="eager"
+        />
+      </div>
 
-          <div class="hero-ctas reveal delay-2">
-            <a href="#projects" class="btn btn-primary">
-              VIEW MY WORK
-              <span class="arrow-icon">→</span>
-            </a>
-            <a href="#contact" class="btn btn-outline">
-              LET'S CONNECT
-              <span class="arrow-icon">→</span>
-            </a>
-          </div>
-        </div>
+      <!-- 4. Bottom-Left Dual CTAs (Matches "SHOP NOW" & "EXPLORE NEW IN") -->
+      <div class="hero-bottom-left reveal delay-2">
+        <a href="#projects" class="btn btn-primary">
+          VIEW WORK
+        </a>
+        <a href="#contact" class="hero-text-link">
+          LET'S CONNECT <span class="arrow-icon">→</span>
+        </a>
+      </div>
 
-        <!-- Center Photograph Cutout (Overlapping Watermark) -->
-        <div class="hero-image-wrap reveal delay-1">
-          <img
-            src="myphoto.png"
-            alt="Shivam Rajput - Web Developer"
-            class="hero-portrait"
-            width="620"
-            height="780"
-            loading="eager"
-          />
-        </div>
-
-        <!-- Right Vertical Editorial Metadata -->
-        <div class="hero-meta reveal delay-2">
-          <div class="hero-meta-item">
-            <span class="hero-meta-label">ROLE</span>
-            <span class="hero-meta-value" id="hero-role-val">WEB DEVELOPER</span>
-          </div>
-
-          <div class="hero-meta-item">
-            <span class="hero-meta-label">FOCUS</span>
-            <span class="hero-meta-value" id="hero-focus-val">CREATIVE DEVELOPER</span>
-          </div>
-
-          <div class="hero-meta-item">
-            <span class="hero-meta-label">LOCATION</span>
-            <span class="hero-meta-value" id="hero-location-val">INDIA</span>
-          </div>
-        </div>
+      <!-- 5. Bottom-Right Meta Badge (Matches "NEW COLLECTION 2024") -->
+      <div class="hero-bottom-right reveal delay-2">
+        <span class="hero-meta-kicker">WEB &amp; SOFTWARE</span>
+        <span class="hero-meta-bold" id="hero-role-val">DEVELOPER</span>
+        <span class="hero-meta-year" id="hero-location-val">2026 // INDIA</span>
       </div>
     </section>
 
     <!-- ======================================================================
-         4. DEVELOPER CATEGORY STRIP (GAZU STRIP)
+         4. DEVELOPER CATEGORY STRIP (Matches GAZU MEN / WOMEN / KIDS Strip)
          ====================================================================== -->
     <section class="category-strip" aria-label="Specialization Categories">
       <div class="container category-grid">
-        <!-- Category 1 -->
+        <!-- Category 1 (Frontend) -->
         <a href="#projects" class="category-card reveal">
-          <div class="category-top">
-            <span class="category-number">01 / FRONTEND</span>
-            <svg class="category-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-              <line x1="8" y1="21" x2="16" y2="21"></line>
-              <line x1="12" y1="17" x2="12" y2="21"></line>
-            </svg>
+          <div class="category-thumb-wrap">
+            <img src="lc.png" alt="Frontend Development Thumbnail" />
           </div>
           <div class="category-body">
-            <h3 class="category-title">FRONTEND DEVELOPMENT</h3>
-            <p class="category-desc">Interfaces built with clarity, responsive architecture, and precision.</p>
+            <h3 class="category-title">FRONTEND</h3>
+            <p class="category-desc">Interfaces built with clarity, speed &amp; responsive precision.</p>
+            <span class="category-link">
+              EXPLORE WORK <span class="arrow-icon">→</span>
+            </span>
           </div>
-          <span class="category-link">
-            EXPLORE PROJECTS
-            <span class="arrow-icon">→</span>
-          </span>
         </a>
 
-        <!-- Category 2 -->
+        <!-- Category 2 (Backend) -->
         <a href="#skills" class="category-card reveal delay-1">
-          <div class="category-top">
-            <span class="category-number">02 / BACKEND</span>
-            <svg class="category-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-              <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-              <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
-              <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-            </svg>
+          <div class="category-thumb-wrap">
+            <img src="myphoto.png" alt="Backend Development Thumbnail" />
           </div>
           <div class="category-body">
-            <h3 class="category-title">BACKEND DEVELOPMENT</h3>
-            <p class="category-desc">Logic, APIs, server pipelines, and reliable application architecture.</p>
+            <h3 class="category-title">BACKEND</h3>
+            <p class="category-desc">Logic, APIs, IoT telemetry &amp; reliable system architecture.</p>
+            <span class="category-link">
+              EXPLORE SKILLS <span class="arrow-icon">→</span>
+            </span>
           </div>
-          <span class="category-link">
-            EXPLORE SKILLS
-            <span class="arrow-icon">→</span>
-          </span>
         </a>
 
-        <!-- Category 3 -->
+        <!-- Category 3 (Creative) -->
         <a href="#about" class="category-card reveal delay-2">
-          <div class="category-top">
-            <span class="category-number">03 / CREATIVE</span>
-            <svg class="category-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-            </svg>
+          <div class="category-thumb-wrap">
+            <img src="lc.png" alt="Creative Development Thumbnail" />
           </div>
           <div class="category-body">
-            <h3 class="category-title">CREATIVE DEVELOPMENT</h3>
-            <p class="category-desc">Thoughtful details, tactile micro-interactions, and smooth digital experiences.</p>
+            <h3 class="category-title">CREATIVE</h3>
+            <p class="category-desc">Thoughtful details, micro-interactions &amp; fluid digital aesthetics.</p>
+            <span class="category-link">
+              ABOUT SHIVAM <span class="arrow-icon">→</span>
+            </span>
           </div>
-          <span class="category-link">
-            ABOUT ME
-            <span class="arrow-icon">→</span>
-          </span>
         </a>
       </div>
     </section>
 
     <!-- ======================================================================
-         5. INTRODUCTION / ABOUT SECTION
+         5. NEW VIBES SECTION (Matches GAZU Editorial Split Banner)
+         ====================================================================== -->
+    <section class="vibes-banner" id="journey-banner">
+      <div class="container vibes-grid">
+        <!-- Left Side: Editorial Typography -->
+        <div class="vibes-left">
+          <span class="vibes-season reveal">NEW SEASON</span>
+
+          <h2 class="vibes-title reveal delay-1">
+            NEW<br />
+            VIBES
+          </h2>
+
+          <p class="vibes-desc reveal delay-2">
+            Discover modern web development, intelligent disaster monitoring platforms, and clean digital craftsmanship.
+          </p>
+
+          <div class="reveal delay-3">
+            <a href="#projects" class="btn btn-primary">
+              EXPLORE COLLECTION &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Side: Studio Portrait Card (Matching Model Photo) -->
+        <div class="vibes-right reveal delay-2">
+          <div class="vibes-portrait-card">
+            <img
+              src="myphoto.png"
+              alt="Shivam Rajput - Studio Portrait"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         6. TRUST & VALUE BADGES STRIP (Matches GAZU Feature Bar)
+         ====================================================================== -->
+    <div class="trust-strip">
+      <div class="container trust-grid">
+        <div class="trust-item reveal">
+          <span class="trust-icon" aria-hidden="true">⚡</span>
+          <div class="trust-content">
+            <span class="trust-title">CLEAN CODE</span>
+            <span class="trust-desc">Semantic, modular &amp; maintainable</span>
+          </div>
+        </div>
+
+        <div class="trust-item reveal delay-1">
+          <span class="trust-icon" aria-hidden="true">📱</span>
+          <div class="trust-content">
+            <span class="trust-title">RESPONSIVE DESIGN</span>
+            <span class="trust-desc">Flawless on phone, tablet &amp; desktop</span>
+          </div>
+        </div>
+
+        <div class="trust-item reveal delay-2">
+          <span class="trust-icon" aria-hidden="true">🚀</span>
+          <div class="trust-content">
+            <span class="trust-title">HIGH PERFORMANCE</span>
+            <span class="trust-desc">Lightning fast &amp; accessible</span>
+          </div>
+        </div>
+
+        <div class="trust-item reveal delay-3">
+          <span class="trust-icon" aria-hidden="true">🤝</span>
+          <div class="trust-content">
+            <span class="trust-title">DIRECT COLLABORATION</span>
+            <span class="trust-desc">Transparent communication &amp; delivery</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================================================================
+         7. FEATURED PROJECTS (Matches "BEST OF GAZU" Product Grid)
+         ====================================================================== -->
+    <section class="projects-section" id="projects">
+      <div class="container">
+        <!-- Section Header matching "BEST OF GAZU" -->
+        <div class="section-header-editorial">
+          <h2 class="section-title reveal">SELECTED WORK</h2>
+          <a href="#contact" class="section-header-right-link reveal delay-1">VIEW ALL &rarr;</a>
+        </div>
+
+        <!-- 4-Column Product Style Grid -->
+        <div class="projects-grid" id="projects-container">
+          <!-- Populated dynamically via main.js / fallback cards -->
+          <article class="project-card reveal">
+            <div class="project-preview">
+              <span class="project-wishlist-icon" title="Save Project">🤍</span>
+              <div class="project-preview-mockup">
+                <div class="mockup-header">
+                  <span class="mockup-status-dot">TELEMETRY ONLINE</span>
+                  <span>IOT &bull; AI</span>
+                </div>
+                <div class="mockup-center">
+                  <h4>NER LandslideGuard AI</h4>
+                  <p>AI EARLY-WARNING PLATFORM</p>
+                </div>
+                <div class="mockup-footer">
+                  <span>HIMALAYAN SENSORS</span>
+                  <span>01</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-meta-bar">
+                <span class="project-index">01 / DISASTER AI</span>
+              </div>
+              <h3 class="project-title">NER LandslideGuard AI</h3>
+              <p class="project-desc">
+                AI disaster early warning platform integrating ESP32 IoT sensors, WebSockets, Google Gemini AI, and GIS Leaflet mapping.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">IoT</span>
+                <span class="tech-tag">Gemini AI</span>
+              </div>
+              <div class="project-actions">
+                <a href="#contact" class="btn btn-sm btn-outline">DETAILS &rarr;</a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">CODE ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal delay-1">
+            <div class="project-preview">
+              <span class="project-wishlist-icon" title="Save Project">🤍</span>
+              <div class="project-preview-mockup">
+                <div class="mockup-header">
+                  <span class="mockup-status-dot">ACADEMIC HUB</span>
+                  <span>WEB ARCHIVE</span>
+                </div>
+                <div class="mockup-center">
+                  <h4>University PYQ Portal</h4>
+                  <p>EXAM QUESTION ARCHIVE</p>
+                </div>
+                <div class="mockup-footer">
+                  <span>FAST FILTERING</span>
+                  <span>02</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-meta-bar">
+                <span class="project-index">02 / EDUCATION TECH</span>
+              </div>
+              <h3 class="project-title">University PYQ Portal</h3>
+              <p class="project-desc">
+                Centralized academic question paper repository with semester filtering and clean download access for students.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+              <div class="project-actions">
+                <a href="#contact" class="btn btn-sm btn-outline">DETAILS &rarr;</a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">CODE ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal delay-2">
+            <div class="project-preview">
+              <span class="project-wishlist-icon" title="Save Project">🤍</span>
+              <div class="project-preview-mockup">
+                <div class="mockup-header">
+                  <span class="mockup-status-dot">SIH PROTOTYPE</span>
+                  <span>AGRI-TECH</span>
+                </div>
+                <div class="mockup-center">
+                  <h4>FasalIQ Crop AI</h4>
+                  <p>YIELD PREDICTION ENGINE</p>
+                </div>
+                <div class="mockup-footer">
+                  <span>SMART SOIL DATA</span>
+                  <span>03</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-meta-bar">
+                <span class="project-index">03 / AI HACKATHON</span>
+              </div>
+              <h3 class="project-title">FasalIQ Crop Intelligence</h3>
+              <p class="project-desc">
+                Smart India Hackathon agricultural optimization platform delivering algorithmic crop yield predictions and dosage calculators.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Vite</span>
+                <span class="tech-tag">Tailwind</span>
+              </div>
+              <div class="project-actions">
+                <a href="#contact" class="btn btn-sm btn-outline">DETAILS &rarr;</a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">CODE ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal delay-3">
+            <div class="project-preview">
+              <span class="project-wishlist-icon" title="Save Project">🤍</span>
+              <div class="project-preview-mockup">
+                <div class="mockup-header">
+                  <span class="mockup-status-dot">COMMAND HUB</span>
+                  <span>CRISIS OPS</span>
+                </div>
+                <div class="mockup-center">
+                  <h4>Readyline Command</h4>
+                  <p>DISASTER READINESS HUB</p>
+                </div>
+                <div class="mockup-footer">
+                  <span>RISK REGISTER</span>
+                  <span>04</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-meta-bar">
+                <span class="project-index">04 / CIVIC RESILIENCE</span>
+              </div>
+              <h3 class="project-title">Readyline Operations</h3>
+              <p class="project-desc">
+                Disaster readiness and community coordination dashboard featuring interactive risk registers and resource workflows.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">State Mgmt</span>
+                <span class="tech-tag">A11y</span>
+              </div>
+              <div class="project-actions">
+                <a href="#contact" class="btn btn-sm btn-outline">DETAILS &rarr;</a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">CODE ↗</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         8. INTRODUCTION / ABOUT SECTION
          ====================================================================== -->
     <section class="about-section" id="about">
       <div class="container about-layout">
@@ -289,10 +509,8 @@
           </h2>
 
           <div class="about-narrative reveal delay-2">
-            <p>
-              I'm a developer who enjoys turning ideas into meaningful digital experiences.
-              I focus on building responsive websites, writing maintainable code, and creating
-              interfaces that feel intuitive and effortless to use.
+            <p id="hero-tagline">
+              I design and develop modern websites that combine thoughtful design, clean code, and smooth interactions.
             </p>
             <p>
               Currently pursuing my B.Tech in Computer Science, I continuously explore the
@@ -304,27 +522,25 @@
 
           <div class="reveal delay-3">
             <a href="#contact" class="btn btn-outline">
-              DISCUSS A PROJECT
-              <span class="arrow-icon">→</span>
+              DISCUSS A PROJECT &rarr;
             </a>
           </div>
         </div>
 
-        <!-- Right Side: Editorial Specifications & Metrics -->
+        <!-- Right Side: Editorial Specifications -->
         <div class="about-right">
-          <!-- Specifications Table -->
           <div class="editorial-specs reveal delay-1">
             <div class="spec-row">
               <span class="spec-label">ROLE</span>
-              <span class="spec-value">Web Developer</span>
+              <span class="spec-value" id="hero-role-spec">Web Developer</span>
             </div>
             <div class="spec-row">
               <span class="spec-label">FOCUS</span>
-              <span class="spec-value">Frontend Development</span>
+              <span class="spec-value" id="hero-focus-val">Frontend &amp; Full-Stack</span>
             </div>
             <div class="spec-row">
               <span class="spec-label">LEARNING</span>
-              <span class="spec-value">Full-Stack Development</span>
+              <span class="spec-value">Full-Stack &amp; AI Systems</span>
             </div>
             <div class="spec-row">
               <span class="spec-label">LOCATION</span>
@@ -335,521 +551,73 @@
               <span class="spec-value">B.Tech Computer Science</span>
             </div>
           </div>
-
-          <!-- Metrics Block -->
-          <div class="editorial-metrics reveal delay-2">
-            <div class="metric-tile">
-              <span class="metric-num">04+</span>
-              <span class="metric-label">Key Systems</span>
-            </div>
-            <div class="metric-tile">
-              <span class="metric-num">100%</span>
-              <span class="metric-label">Clean Code</span>
-            </div>
-            <div class="metric-tile">
-              <span class="metric-num">24/7</span>
-              <span class="metric-label">Curiosity</span>
-            </div>
-          </div>
         </div>
       </div>
     </section>
 
     <!-- ======================================================================
-         6. FEATURED PROJECTS ("SELECTED WORK")
-         ====================================================================== -->
-    <section class="projects-section" id="projects">
-      <div class="container">
-        <!-- Section Header -->
-        <div class="section-header-editorial">
-          <div class="section-header-left">
-            <span class="kicker reveal">CURATED PORTFOLIO</span>
-            <h2 class="section-title title-display reveal delay-1">SELECTED WORK</h2>
-          </div>
-          <p class="section-subtitle reveal delay-2">
-            A selection of things I've built and explored across web development, IoT telemetry, and AI systems.
-          </p>
-        </div>
-
-        <!-- Projects Grid -->
-        <div class="projects-grid" id="projects-container">
-          <!-- Project 1: NER LandslideGuard AI -->
-          <article class="project-card reveal">
-            <div class="project-preview">
-              <div class="project-preview-mockup">
-                <div class="mockup-header">
-                  <span class="mockup-status-dot">TELEMETRY ONLINE</span>
-                  <span>ESP32 + WEBSOCKET</span>
-                </div>
-                <div class="mockup-center">
-                  <h4>NER LandslideGuard AI</h4>
-                  <p>AI EARLY-WARNING RISK MONITORING</p>
-                </div>
-                <div class="mockup-footer">
-                  <span>HIMALAYAN SENSOR CLUSTER</span>
-                  <span>GEMINI 2.5 SAFETY ENGINE</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="project-info">
-              <div class="project-meta-bar">
-                <span class="project-index">01 / DISASTER AI</span>
-                <span class="project-type">FULL-STACK & IOT</span>
-              </div>
-
-              <h3 class="project-title">NER LandslideGuard AI</h3>
-
-              <p class="project-desc">
-                An early-warning disaster risk monitoring platform designed for North Eastern India. Integrates field-deployable ESP32 sensor telemetry, real-time WebSockets, Google Gemini AI geotechnical safety analysis, Web Audio emergency sirens, and GIS Leaflet mapping.
-              </p>
-
-              <div class="project-tech-tags">
-                <span class="tech-tag">React</span>
-                <span class="tech-tag">TypeScript</span>
-                <span class="tech-tag">Node.js</span>
-                <span class="tech-tag">WebSockets</span>
-                <span class="tech-tag">Gemini AI</span>
-                <span class="tech-tag">Leaflet GIS</span>
-                <span class="tech-tag">ESP32 IoT</span>
-              </div>
-
-              <div class="project-actions">
-                <a href="#contact" class="btn btn-sm btn-outline">
-                  VIEW DETAILS
-                  <span class="arrow-icon">→</span>
-                </a>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
-                  SOURCE CODE
-                  <span class="arrow-icon">↗</span>
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 2: University PYQ Portal -->
-          <article class="project-card reveal delay-1">
-            <div class="project-preview">
-              <div class="project-preview-mockup">
-                <div class="mockup-header">
-                  <span class="mockup-status-dot">ACADEMIC ARCHIVE</span>
-                  <span>LIGHTWEIGHT WEB ENGINE</span>
-                </div>
-                <div class="mockup-center">
-                  <h4>University PYQ Portal</h4>
-                  <p>EXAMINATION PAPERS & SYLLABUS HUB</p>
-                </div>
-                <div class="mockup-footer">
-                  <span>SEMESTER FILTERING</span>
-                  <span>FAST STUDY REPOSITORY</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="project-info">
-              <div class="project-meta-bar">
-                <span class="project-index">02 / EDUCATION TECH</span>
-                <span class="project-type">WEB APPLICATION</span>
-              </div>
-
-              <h3 class="project-title">University PYQ Portal</h3>
-
-              <p class="project-desc">
-                A dedicated academic question paper repository built to help engineering students rapidly search, filter by semester and subject, and access past examination papers without cumbersome ad clutter or broken download links.
-              </p>
-
-              <div class="project-tech-tags">
-                <span class="tech-tag">HTML5</span>
-                <span class="tech-tag">CSS3</span>
-                <span class="tech-tag">JavaScript</span>
-                <span class="tech-tag">Responsive UI</span>
-                <span class="tech-tag">Fast Search</span>
-              </div>
-
-              <div class="project-actions">
-                <a href="#contact" class="btn btn-sm btn-outline">
-                  EXPLORE PLATFORM
-                  <span class="arrow-icon">→</span>
-                </a>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
-                  SOURCE CODE
-                  <span class="arrow-icon">↗</span>
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 3: FasalIQ -->
-          <article class="project-card reveal delay-2">
-            <div class="project-preview">
-              <div class="project-preview-mockup">
-                <div class="mockup-header">
-                  <span class="mockup-status-dot">SIH PROTOTYPE</span>
-                  <span>VITE + REACT ENGINE</span>
-                </div>
-                <div class="mockup-center">
-                  <h4>FasalIQ Agri-Tech</h4>
-                  <p>AI CROP YIELD & OPTIMIZATION</p>
-                </div>
-                <div class="mockup-footer">
-                  <span>SOIL & WEATHER METRICS</span>
-                  <span>PRECISION CALCULATORS</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="project-info">
-              <div class="project-meta-bar">
-                <span class="project-index">03 / AI HACKATHON</span>
-                <span class="project-type">AGRICULTURAL INTELLIGENCE</span>
-              </div>
-
-              <h3 class="project-title">FasalIQ Crop Intelligence</h3>
-
-              <p class="project-desc">
-                A Smart India Hackathon agricultural optimization platform delivering algorithmic crop yield predictions, multi-crop comparisons, fertilizer requirement estimation, and irrigation planning calibrated for Indian farming conditions.
-              </p>
-
-              <div class="project-tech-tags">
-                <span class="tech-tag">React</span>
-                <span class="tech-tag">Vite</span>
-                <span class="tech-tag">Tailwind CSS</span>
-                <span class="tech-tag">Algorithms</span>
-                <span class="tech-tag">Local Storage</span>
-              </div>
-
-              <div class="project-actions">
-                <a href="#contact" class="btn btn-sm btn-outline">
-                  VIEW PROTOTYPE
-                  <span class="arrow-icon">→</span>
-                </a>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
-                  SOURCE CODE
-                  <span class="arrow-icon">↗</span>
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 4: Readyline -->
-          <article class="project-card reveal delay-3">
-            <div class="project-preview">
-              <div class="project-preview-mockup">
-                <div class="mockup-header">
-                  <span class="mockup-status-dot">COMMAND HUB</span>
-                  <span>CRISIS RESPONSE</span>
-                </div>
-                <div class="mockup-center">
-                  <h4>Readyline Command</h4>
-                  <p>DISASTER READINESS & RISK REGISTER</p>
-                </div>
-                <div class="mockup-footer">
-                  <span>INCIDENT WORKFLOWS</span>
-                  <span>ZERO-DEPENDENCY RUNTIME</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="project-info">
-              <div class="project-meta-bar">
-                <span class="project-index">04 / CIVIC RESILIENCE</span>
-                <span class="project-type">DASHBOARD ARCHITECTURE</span>
-              </div>
-
-              <h3 class="project-title">Readyline Operations Center</h3>
-
-              <p class="project-desc">
-                A streamlined disaster readiness and community coordination dashboard featuring dynamic risk registers, operational action checklists, team role assignments, and emergency resource management workflows.
-              </p>
-
-              <div class="project-tech-tags">
-                <span class="tech-tag">JavaScript</span>
-                <span class="tech-tag">Modular CSS</span>
-                <span class="tech-tag">State Management</span>
-                <span class="tech-tag">Accessible DOM</span>
-              </div>
-
-              <div class="project-actions">
-                <a href="#contact" class="btn btn-sm btn-outline">
-                  VIEW DETAILS
-                  <span class="arrow-icon">→</span>
-                </a>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
-                  SOURCE CODE
-                  <span class="arrow-icon">↗</span>
-                </a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ======================================================================
-         7. NEW VIBES SECTION — DEVELOPER BANNER
-         ====================================================================== -->
-    <section class="vibes-banner" id="journey-banner">
-      <div class="container vibes-grid">
-        <!-- Left Side: Editorial Typography -->
-        <div class="vibes-left">
-          <span class="kicker kicker-light reveal">CURRENT FOCUS</span>
-
-          <h2 class="vibes-title title-display reveal delay-1">
-            BUILD.<br />LEARN.<br />CREATE.
-          </h2>
-
-          <p class="vibes-desc reveal delay-2">
-            Always exploring better ways to build useful, accessible, and engaging digital experiences.
-          </p>
-
-          <div class="reveal delay-3">
-            <a href="#journey" class="btn btn-light">
-              EXPLORE MY JOURNEY
-              <span class="arrow-icon">→</span>
-            </a>
-          </div>
-        </div>
-
-        <!-- Right Side: Luxury Editorial Monolith Graphic -->
-        <div class="vibes-right reveal delay-2">
-          <div class="vibes-monolith">
-            <div class="monolith-header">
-              <span>MANIFESTO</span>
-              <span>DEV // 2026</span>
-            </div>
-
-            <div class="monolith-core">
-              <div class="monolith-badge">SR</div>
-              <p class="monolith-quote">
-                "CODE AS A CRAFT. DESIGN AS A COMMITMENT."
-              </p>
-            </div>
-
-            <div class="monolith-footer">
-              <span>SHIVAM RAJPUT</span>
-              <span>INDIA</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ======================================================================
-         8. SKILLS SECTION ("TOOLS OF THE TRADE")
+         9. SKILLS SECTION ("TOOLS OF THE TRADE")
          ====================================================================== -->
     <section class="skills-section" id="skills">
       <div class="container">
-        <!-- Section Header -->
         <div class="section-header-editorial">
-          <div class="section-header-left">
-            <span class="kicker reveal">TECHNICAL PROFICIENCY</span>
-            <h2 class="section-title title-display reveal delay-1">TOOLS OF THE TRADE</h2>
-          </div>
-          <p class="section-subtitle reveal delay-2">
-            A focused breakdown of core languages, libraries, and developer tools applied across real projects.
-          </p>
+          <h2 class="section-title reveal">TOOLS OF THE TRADE</h2>
         </div>
 
-        <!-- Skills Grid -->
         <div class="skills-grid">
-          <!-- Skill Category 1: Frontend -->
           <div class="skill-category-card reveal">
             <div class="skill-cat-header">
               <span class="skill-cat-index">01</span>
               <h3 class="skill-cat-title">FRONTEND</h3>
             </div>
             <div class="skill-tags-list">
-              <div class="skill-tag-item">
-                <span>HTML5 (Semantic)</span>
-                <span class="skill-level-dot"></span>
-              </div>
-              <div class="skill-tag-item">
-                <span>CSS3 (Flex / Grid / Tokens)</span>
-                <span class="skill-level-dot"></span>
-              </div>
-              <div class="skill-tag-item">
-                <span>JavaScript (ES6+)</span>
-                <span class="skill-level-dot"></span>
-              </div>
-              <div class="skill-tag-item">
-                <span>React</span>
-                <span class="skill-level-dot"></span>
-              </div>
-              <div class="skill-tag-item">
-                <span>Tailwind CSS</span>
-                <span class="skill-level-dot"></span>
-              </div>
+              <div class="skill-tag-item"><span>HTML5 (Semantic)</span><span class="skill-level-dot"></span></div>
+              <div class="skill-tag-item"><span>CSS3 (Modern Layouts)</span><span class="skill-level-dot"></span></div>
+              <div class="skill-tag-item"><span>JavaScript (ES6+)</span><span class="skill-level-dot"></span></div>
+              <div class="skill-tag-item"><span>React</span><span class="skill-level-dot"></span></div>
+              <div class="skill-tag-item"><span>Tailwind CSS</span><span class="skill-level-dot"></span></div>
             </div>
           </div>
 
-          <!-- Skill Category 2: Programming -->
           <div class="skill-category-card reveal delay-1">
             <div class="skill-cat-header">
               <span class="skill-cat-index">02</span>
               <h3 class="skill-cat-title">PROGRAMMING</h3>
             </div>
             <div class="skill-tags-list">
-              <div class="skill-tag-item">
-                <span>Java</span>
-                <span class="skill-level-dot"></span>
-              </div>
-              <div class="skill-tag-item">
-                <span>C</span>
-                <span class="skill-level-dot"></span>
-              </div>
-              <div class="skill-tag-item">
-                <span>Data Structures</span>
-                <span class="skill-level-dot"></span>
-              </div>
-              <div class="skill-tag-item">
-                <span>OOP Concepts</span>
-                <span class="skill-level-dot"></span>
-              </div>
-              <div class="skill-tag-item">
-                <span>Algorithmic Logic</span>
-                <span class="skill-level-dot"></span>
-              </div>
+              <div class="skill-tag-item"><span>Java</span><span class="skill-level-dot"></span></div>
+              <div class="skill-tag-item"><span>C</span><span class="skill-level-dot"></span></div>
+              <div class="skill-tag-item"><span>Data Structures</span><span class="skill-level-dot"></span></div>
+              <div class="skill-tag-item"><span>OOP Design</span><span class="skill-level-dot"></span></div>
+              <div class="skill-tag-item"><span>Algorithmic Logic</span><span class="skill-level-dot"></span></div>
             </div>
           </div>
 
-          <!-- Skill Category 3: Backend & Architecture -->
           <div class="skill-category-card reveal delay-2">
             <div class="skill-cat-header">
               <span class="skill-cat-index">03</span>
-              <h3 class="skill-cat-title">BACKEND & DATA</h3>
+              <h3 class="skill-cat-title">BACKEND &amp; DATA</h3>
             </div>
             <div class="skill-tags-list">
-              <div class="skill-tag-item">
-                <span>Node.js</span>
-                <span class="skill-level-dot"></span>
-              </div>
-              <div class="skill-tag-item">
-                <span>Express</span>
-                <span class="skill-level-dot"></span>
-              </div>
-              <div class="skill-tag-item">
-                <span>RESTful APIs</span>
-                <span class="skill-level-dot"></span>
-              </div>
-              <div class="skill-tag-item">
-                <span>WebSockets Telemetry</span>
-                <span class="skill-level-dot"></span>
-              </div>
-              <div class="skill-tag-item">
-                <span>JSON Schema & Data</span>
-                <span class="skill-level-dot"></span>
-              </div>
+              <div class="skill-tag-item"><span>Node.js</span><span class="skill-level-dot"></span></div>
+              <div class="skill-tag-item"><span>Express</span><span class="skill-level-dot"></span></div>
+              <div class="skill-tag-item"><span>REST APIs</span><span class="skill-level-dot"></span></div>
+              <div class="skill-tag-item"><span>WebSockets</span><span class="skill-level-dot"></span></div>
+              <div class="skill-tag-item"><span>JSON Schemas</span><span class="skill-level-dot"></span></div>
             </div>
           </div>
 
-          <!-- Skill Category 4: Tools & Workflow -->
           <div class="skill-category-card reveal delay-3">
             <div class="skill-cat-header">
               <span class="skill-cat-index">04</span>
-              <h3 class="skill-cat-title">TOOLS & WORKFLOW</h3>
+              <h3 class="skill-cat-title">WORKFLOW</h3>
             </div>
             <div class="skill-tags-list">
-              <div class="skill-tag-item">
-                <span>Git Version Control</span>
-                <span class="skill-level-dot"></span>
-              </div>
-              <div class="skill-tag-item">
-                <span>GitHub Collaboration</span>
-                <span class="skill-level-dot"></span>
-              </div>
-              <div class="skill-tag-item">
-                <span>VS Code</span>
-                <span class="skill-level-dot"></span>
-              </div>
-              <div class="skill-tag-item">
-                <span>Vite Bundler</span>
-                <span class="skill-level-dot"></span>
-              </div>
-              <div class="skill-tag-item">
-                <span>Browser DevTools</span>
-                <span class="skill-level-dot"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ======================================================================
-         9. EXPERIENCE / LEARNING JOURNEY TIMELINE
-         ====================================================================== -->
-    <section class="journey-section" id="journey">
-      <div class="container">
-        <!-- Section Header -->
-        <div class="section-header-editorial">
-          <div class="section-header-left">
-            <span class="kicker reveal">MILESTONES</span>
-            <h2 class="section-title title-display reveal delay-1">THE JOURNEY SO FAR</h2>
-          </div>
-          <p class="section-subtitle reveal delay-2">
-            Key academic milestones, project breakthroughs, and technical learning horizons.
-          </p>
-        </div>
-
-        <!-- Editorial Timeline -->
-        <div class="timeline">
-          <!-- Timeline Item 1 -->
-          <div class="timeline-item reveal">
-            <div class="timeline-date-col">
-              <span class="timeline-date">2024 — PRESENT</span>
-              <span class="timeline-node" aria-hidden="true"></span>
-            </div>
-            <div class="timeline-content-col">
-              <h3 class="timeline-role">B.Tech Computer Science & Engineering</h3>
-              <span class="timeline-org">UNIVERSITY ACADEMICS // INDIA</span>
-              <p class="timeline-desc">
-                Building a rigorous theoretical and practical foundation in algorithms, data structures, operating systems, computer networking, and software engineering.
-              </p>
-            </div>
-          </div>
-
-          <!-- Timeline Item 2 -->
-          <div class="timeline-item reveal delay-1">
-            <div class="timeline-date-col">
-              <span class="timeline-date">2024 — 2025</span>
-              <span class="timeline-node" aria-hidden="true"></span>
-            </div>
-            <div class="timeline-content-col">
-              <h3 class="timeline-role">Programming Foundations & OOP</h3>
-              <span class="timeline-org">JAVA, C & PROBLEM SOLVING</span>
-              <p class="timeline-desc">
-                Strengthened analytical problem-solving and software architecture concepts using Java and C, applying modular design and structured data algorithms.
-              </p>
-            </div>
-          </div>
-
-          <!-- Timeline Item 3 -->
-          <div class="timeline-item reveal delay-2">
-            <div class="timeline-date-col">
-              <span class="timeline-date">2025</span>
-              <span class="timeline-node" aria-hidden="true"></span>
-            </div>
-            <div class="timeline-content-col">
-              <h3 class="timeline-role">Modern Web Architecture</h3>
-              <span class="timeline-org">RESPONSIVE DESIGN & INTERACTIVE UIS</span>
-              <p class="timeline-desc">
-                Transitioned to production web development, mastering semantic HTML5, modern CSS layouts (Grid, Flexbox, Custom Properties), and vanilla JavaScript manipulation. Developed the University PYQ portal.
-              </p>
-            </div>
-          </div>
-
-          <!-- Timeline Item 4 -->
-          <div class="timeline-item reveal delay-3">
-            <div class="timeline-date-col">
-              <span class="timeline-date">2025 — 2026</span>
-              <span class="timeline-node" aria-hidden="true"></span>
-            </div>
-            <div class="timeline-content-col">
-              <h3 class="timeline-role">Applied AI & Systems Engineering</h3>
-              <span class="timeline-org">SIH HACKATHON & REAL-TIME IOT</span>
-              <p class="timeline-desc">
-                Engineered complex platforms combining IoT hardware and AI services: created the NER LandslideGuard AI early warning system and built FasalIQ for the Smart India Hackathon.
-              </p>
+              <div class="skill-tag-item"><span>Git</span><span class="skill-level-dot"></span></div>
+              <div class="skill-tag-item"><span>GitHub</span><span class="skill-level-dot"></span></div>
+              <div class="skill-tag-item"><span>VS Code</span><span class="skill-level-dot"></span></div>
+              <div class="skill-tag-item"><span>Vite</span><span class="skill-level-dot"></span></div>
+              <div class="skill-tag-item"><span>DevTools</span><span class="skill-level-dot"></span></div>
             </div>
           </div>
         </div>
@@ -861,7 +629,6 @@
          ====================================================================== -->
     <section class="contact-section" id="contact">
       <div class="container contact-layout">
-        <!-- Left Side: Editorial Outreach -->
         <div class="contact-left">
           <span class="kicker reveal">DIRECT OUTREACH</span>
 
@@ -901,7 +668,6 @@
           </div>
         </div>
 
-        <!-- Right Side: Validated Contact Form -->
         <div class="contact-right reveal delay-2">
           <div class="contact-form-wrap">
             <form id="portfolio-contact-form" class="contact-form" novalidate>
@@ -944,8 +710,7 @@
               <div id="form-status-message" class="form-status" role="alert"></div>
 
               <button type="submit" class="btn btn-primary" style="width: 100%;">
-                SEND MESSAGE
-                <span class="arrow-icon">→</span>
+                SEND MESSAGE &rarr;
               </button>
             </form>
           </div>
