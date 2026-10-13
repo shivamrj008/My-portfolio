@@ -16,47 +16,67 @@
         </div>
 
         <h1>Welcome Back</h1>
-        <p class="subtitle">Developer Studio Access</p>
+        <p class="subtitle">Developer Studio &amp; CMS Access</p>
 
-        <form onsubmit="event.preventDefault(); alert('Studio Portal: Authentication is currently restricted to select administrative collaborators.');">
+        <form id="studio-login-form">
           <div class="input-group">
-            <label for="email">EMAIL ADDRESS</label>
+            <label for="email">USER EMAIL</label>
             <input
               type="email"
               id="email"
-              placeholder="name@domain.com"
+              placeholder="suburajput800@gmail.com"
+              value="suburajput800@gmail.com"
               required
             />
           </div>
 
           <div class="input-group">
-            <label for="password">PASSWORD</label>
+            <label for="password">ADMIN PASSWORD / ACCESS KEY</label>
             <input
               type="password"
               id="password"
-              placeholder="••••••••••••"
+              placeholder="Enter shivam2026"
               required
             />
           </div>
 
           <div class="options">
             <label class="remember">
-              <input type="checkbox" />
-              Remember me
+              <input type="checkbox" checked />
+              Remember session
             </label>
-            <a href="#">Forgot Password?</a>
+            <span style="font-size: 0.6875rem; color: #777; font-family: monospace;">Key: shivam2026</span>
           </div>
 
-          <button type="submit">ENTER STUDIO</button>
+          <div id="login-error" style="display: none; color: #ef4444; font-size: 0.8125rem; margin-bottom: 1rem; font-family: monospace;"></div>
+
+          <button type="submit">ENTER STUDIO ADMIN &rarr;</button>
         </form>
 
         <p class="signup">
-          Inquiries or project proposals?
-          <a href="index.html#contact">Get in Touch</a>
+          Want to view portfolio instead?
+          <a href="index.html">View Live Website</a>
         </p>
 
         <a href="index.html" class="back-home">&larr; Return to Portfolio</a>
       </div>
     </div>
+
+    <script>
+      document.getElementById('studio-login-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const pwd = document.getElementById('password').value.trim();
+        const errorEl = document.getElementById('login-error');
+
+        if (pwd === 'shivam2026' || pwd === 'admin' || pwd === 'shivam') {
+          sessionStorage.setItem('shivam_admin_auth', 'true');
+          errorEl.style.display = 'none';
+          window.location.href = 'admin.html';
+        } else {
+          errorEl.style.display = 'block';
+          errorEl.textContent = 'Incorrect key. Default key is: shivam2026';
+        }
+      });
+    </script>
   </body>
 </html>
