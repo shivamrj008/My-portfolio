@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio Login | Shivam Rajput</title>
+    <link rel="icon" type="image/png" href="lc.png" />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+
+  <body>
+    <div class="login-container">
+      <div class="login-box">
+        <div class="logo">
+          <img src="lc.png" alt="Shivam Monogram" />
+        </div>
+
+        <h1>Welcome Back</h1>
+        <p class="subtitle">Developer Studio Access</p>
+
+        <form onsubmit="event.preventDefault(); alert('Studio Portal: Authentication is currently restricted to select administrative collaborators.');">
+          <div class="input-group">
+            <label for="email">EMAIL ADDRESS</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="name@domain.com"
+              required
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="password">PASSWORD</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="••••••••••••"
+              required
+            />
+          </div>
+
+          <div class="options">
+            <label class="remember">
+              <input type="checkbox" />
+              Remember me
+            </label>
+            <a href="#">Forgot Password?</a>
+          </div>
+
+          <button type="submit">ENTER STUDIO</button>
+        </form>
+
+        <p class="signup">
+          Inquiries or project proposals?
+          <a href="index.html#contact">Get in Touch</a>
+        </p>
+
+        <a href="index.html" class="back-home">&larr; Return to Portfolio</a>
+      </div>
+    </div>
+  </body>
+</html>

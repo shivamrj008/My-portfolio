@@ -1,0 +1,983 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shivam Rajput | Developer Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Shivam Rajput, Web Developer & Software Developer based in India. Minimalist fashion-editorial portfolio showcasing selected projects, technical expertise, and development journey."
+    />
+    <meta name="theme-color" content="#0a0a0a" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="lc.png" />
+
+    <!-- Google Fonts Preconnect & Stylesheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Subtle Custom Cursor for Desktop -->
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+
+    <!-- ======================================================================
+         1. TOP ANNOUNCEMENT BAR
+         ====================================================================== -->
+    <div class="top-announcement">
+      <div class="container announcement-inner">
+        <div class="announcement-left">
+          <span class="announcement-dot" aria-hidden="true"></span>
+          <span>AVAILABLE FOR SELECT PROJECTS</span>
+        </div>
+        <div class="announcement-right">
+          <span>BASED IN INDIA</span>
+          <span aria-hidden="true">|</span>
+          <a href="#contact">LET'S CONNECT</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================================================================
+         2. NAVIGATION BAR
+         ====================================================================== -->
+    <header class="site-header">
+      <div class="container nav-wrapper">
+        <!-- Left Navigation -->
+        <nav class="nav-left" aria-label="Main Navigation">
+          <a href="#hero" class="nav-link active">HOME</a>
+          <a href="#about" class="nav-link">ABOUT</a>
+          <a href="#projects" class="nav-link">PROJECTS</a>
+          <a href="#skills" class="nav-link">SKILLS</a>
+        </nav>
+
+        <!-- Center Brand -->
+        <div class="nav-brand">
+          <img src="lc.png" alt="Shivam Monogram" class="brand-monogram" width="28" height="28" />
+          <a href="#hero" class="brand-title">SHIVAM</a>
+        </div>
+
+        <!-- Right Navigation & Icons -->
+        <div class="nav-right">
+          <a href="#contact" class="nav-contact-link">CONTACT</a>
+
+          <!-- GitHub Icon Link -->
+          <a
+            href="https://github.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="nav-social-link"
+            aria-label="GitHub Profile"
+            title="GitHub Profile"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+          </a>
+
+          <!-- LinkedIn Icon Link -->
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="nav-social-link"
+            aria-label="LinkedIn Profile"
+            title="LinkedIn Profile"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button
+            class="mobile-toggle"
+            aria-label="Open mobile navigation"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer Menu Overlay -->
+    <div class="mobile-nav-drawer" aria-label="Mobile Navigation Drawer">
+      <div class="mobile-links">
+        <a href="#hero" class="mobile-nav-link">
+          <span>01 / HOME</span>
+          <span class="arrow-icon">→</span>
+        </a>
+        <a href="#about" class="mobile-nav-link">
+          <span>02 / ABOUT</span>
+          <span class="arrow-icon">→</span>
+        </a>
+        <a href="#projects" class="mobile-nav-link">
+          <span>03 / SELECTED WORK</span>
+          <span class="arrow-icon">→</span>
+        </a>
+        <a href="#skills" class="mobile-nav-link">
+          <span>04 / SKILLS</span>
+          <span class="arrow-icon">→</span>
+        </a>
+        <a href="#journey" class="mobile-nav-link">
+          <span>05 / JOURNEY</span>
+          <span class="arrow-icon">→</span>
+        </a>
+        <a href="creativity.html" class="mobile-nav-link">
+          <span>06 / CREATIVE LAB</span>
+          <span class="arrow-icon">→</span>
+        </a>
+        <a href="#contact" class="mobile-nav-link">
+          <span>07 / CONTACT</span>
+          <span class="arrow-icon">→</span>
+        </a>
+      </div>
+
+      <div class="mobile-nav-footer">
+        <span class="kicker">BASED IN INDIA</span>
+        <div class="mobile-socials">
+          <a href="mailto:suburajput800@gmail.com" class="btn btn-sm btn-outline">EMAIL DIRECT</a>
+          <a href="./login.html" class="btn btn-sm btn-outline">LOGIN</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================================================================
+         3. HERO SECTION (GAZU COMPOSITION)
+         ====================================================================== -->
+    <section class="hero-section" id="hero">
+      <!-- Massive Oversized Typography Behind Image -->
+      <div class="hero-watermark" aria-hidden="true">DEVELOPER</div>
+
+      <div class="container hero-grid">
+        <!-- Left Editorial Column -->
+        <div class="hero-content">
+          <span class="kicker reveal">BUILDING DIGITAL EXPERIENCES</span>
+
+          <h1 class="hero-tagline title-editorial reveal delay-1">
+            I design and develop modern websites that combine thoughtful design, clean code, and smooth interactions.
+          </h1>
+
+          <div class="hero-ctas reveal delay-2">
+            <a href="#projects" class="btn btn-primary">
+              VIEW MY WORK
+              <span class="arrow-icon">→</span>
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              LET'S CONNECT
+              <span class="arrow-icon">→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Center Photograph Cutout (Overlapping Watermark) -->
+        <div class="hero-image-wrap reveal delay-1">
+          <img
+            src="myphoto.png"
+            alt="Shivam Rajput - Web Developer"
+            class="hero-portrait"
+            width="620"
+            height="780"
+            loading="eager"
+          />
+        </div>
+
+        <!-- Right Vertical Editorial Metadata -->
+        <div class="hero-meta reveal delay-2">
+          <div class="hero-meta-item">
+            <span class="hero-meta-label">ROLE</span>
+            <span class="hero-meta-value">WEB DEVELOPER</span>
+          </div>
+
+          <div class="hero-meta-item">
+            <span class="hero-meta-label">FOCUS</span>
+            <span class="hero-meta-value">CREATIVE DEVELOPER</span>
+          </div>
+
+          <div class="hero-meta-item">
+            <span class="hero-meta-label">LOCATION</span>
+            <span class="hero-meta-value">INDIA</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4. DEVELOPER CATEGORY STRIP (GAZU STRIP)
+         ====================================================================== -->
+    <section class="category-strip" aria-label="Specialization Categories">
+      <div class="container category-grid">
+        <!-- Category 1 -->
+        <a href="#projects" class="category-card reveal">
+          <div class="category-top">
+            <span class="category-number">01 / FRONTEND</span>
+            <svg class="category-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <div class="category-body">
+            <h3 class="category-title">FRONTEND DEVELOPMENT</h3>
+            <p class="category-desc">Interfaces built with clarity, responsive architecture, and precision.</p>
+          </div>
+          <span class="category-link">
+            EXPLORE PROJECTS
+            <span class="arrow-icon">→</span>
+          </span>
+        </a>
+
+        <!-- Category 2 -->
+        <a href="#skills" class="category-card reveal delay-1">
+          <div class="category-top">
+            <span class="category-number">02 / BACKEND</span>
+            <svg class="category-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+              <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+              <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+            </svg>
+          </div>
+          <div class="category-body">
+            <h3 class="category-title">BACKEND DEVELOPMENT</h3>
+            <p class="category-desc">Logic, APIs, server pipelines, and reliable application architecture.</p>
+          </div>
+          <span class="category-link">
+            EXPLORE SKILLS
+            <span class="arrow-icon">→</span>
+          </span>
+        </a>
+
+        <!-- Category 3 -->
+        <a href="#about" class="category-card reveal delay-2">
+          <div class="category-top">
+            <span class="category-number">03 / CREATIVE</span>
+            <svg class="category-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </div>
+          <div class="category-body">
+            <h3 class="category-title">CREATIVE DEVELOPMENT</h3>
+            <p class="category-desc">Thoughtful details, tactile micro-interactions, and smooth digital experiences.</p>
+          </div>
+          <span class="category-link">
+            ABOUT ME
+            <span class="arrow-icon">→</span>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         5. INTRODUCTION / ABOUT SECTION
+         ====================================================================== -->
+    <section class="about-section" id="about">
+      <div class="container about-layout">
+        <!-- Left Side: Editorial Narrative -->
+        <div class="about-left">
+          <span class="kicker reveal">A LITTLE ABOUT ME</span>
+
+          <h2 class="about-headline title-display reveal delay-1">
+            DESIGN MINDED.<br />CODE DRIVEN.
+          </h2>
+
+          <div class="about-narrative reveal delay-2">
+            <p>
+              I'm a developer who enjoys turning ideas into meaningful digital experiences.
+              I focus on building responsive websites, writing maintainable code, and creating
+              interfaces that feel intuitive and effortless to use.
+            </p>
+            <p>
+              Currently pursuing my B.Tech in Computer Science, I continuously explore the
+              intersection of frontend craftsmanship, software architecture, and practical
+              intelligent systems. Every line of code is written with attention to structure,
+              clean standards, and accessibility.
+            </p>
+          </div>
+
+          <div class="reveal delay-3">
+            <a href="#contact" class="btn btn-outline">
+              DISCUSS A PROJECT
+              <span class="arrow-icon">→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Side: Editorial Specifications & Metrics -->
+        <div class="about-right">
+          <!-- Specifications Table -->
+          <div class="editorial-specs reveal delay-1">
+            <div class="spec-row">
+              <span class="spec-label">ROLE</span>
+              <span class="spec-value">Web Developer</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">FOCUS</span>
+              <span class="spec-value">Frontend Development</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">LEARNING</span>
+              <span class="spec-value">Full-Stack Development</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">LOCATION</span>
+              <span class="spec-value">India</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">EDUCATION</span>
+              <span class="spec-value">B.Tech Computer Science</span>
+            </div>
+          </div>
+
+          <!-- Metrics Block -->
+          <div class="editorial-metrics reveal delay-2">
+            <div class="metric-tile">
+              <span class="metric-num">04+</span>
+              <span class="metric-label">Key Systems</span>
+            </div>
+            <div class="metric-tile">
+              <span class="metric-num">100%</span>
+              <span class="metric-label">Clean Code</span>
+            </div>
+            <div class="metric-tile">
+              <span class="metric-num">24/7</span>
+              <span class="metric-label">Curiosity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         6. FEATURED PROJECTS ("SELECTED WORK")
+         ====================================================================== -->
+    <section class="projects-section" id="projects">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header-editorial">
+          <div class="section-header-left">
+            <span class="kicker reveal">CURATED PORTFOLIO</span>
+            <h2 class="section-title title-display reveal delay-1">SELECTED WORK</h2>
+          </div>
+          <p class="section-subtitle reveal delay-2">
+            A selection of things I've built and explored across web development, IoT telemetry, and AI systems.
+          </p>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          <!-- Project 1: NER LandslideGuard AI -->
+          <article class="project-card reveal">
+            <div class="project-preview">
+              <div class="project-preview-mockup">
+                <div class="mockup-header">
+                  <span class="mockup-status-dot">TELEMETRY ONLINE</span>
+                  <span>ESP32 + WEBSOCKET</span>
+                </div>
+                <div class="mockup-center">
+                  <h4>NER LandslideGuard AI</h4>
+                  <p>AI EARLY-WARNING RISK MONITORING</p>
+                </div>
+                <div class="mockup-footer">
+                  <span>HIMALAYAN SENSOR CLUSTER</span>
+                  <span>GEMINI 2.5 SAFETY ENGINE</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-meta-bar">
+                <span class="project-index">01 / DISASTER AI</span>
+                <span class="project-type">FULL-STACK & IOT</span>
+              </div>
+
+              <h3 class="project-title">NER LandslideGuard AI</h3>
+
+              <p class="project-desc">
+                An early-warning disaster risk monitoring platform designed for North Eastern India. Integrates field-deployable ESP32 sensor telemetry, real-time WebSockets, Google Gemini AI geotechnical safety analysis, Web Audio emergency sirens, and GIS Leaflet mapping.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">WebSockets</span>
+                <span class="tech-tag">Gemini AI</span>
+                <span class="tech-tag">Leaflet GIS</span>
+                <span class="tech-tag">ESP32 IoT</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="#contact" class="btn btn-sm btn-outline">
+                  VIEW DETAILS
+                  <span class="arrow-icon">→</span>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                  SOURCE CODE
+                  <span class="arrow-icon">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: University PYQ Portal -->
+          <article class="project-card reveal delay-1">
+            <div class="project-preview">
+              <div class="project-preview-mockup">
+                <div class="mockup-header">
+                  <span class="mockup-status-dot">ACADEMIC ARCHIVE</span>
+                  <span>LIGHTWEIGHT WEB ENGINE</span>
+                </div>
+                <div class="mockup-center">
+                  <h4>University PYQ Portal</h4>
+                  <p>EXAMINATION PAPERS & SYLLABUS HUB</p>
+                </div>
+                <div class="mockup-footer">
+                  <span>SEMESTER FILTERING</span>
+                  <span>FAST STUDY REPOSITORY</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-meta-bar">
+                <span class="project-index">02 / EDUCATION TECH</span>
+                <span class="project-type">WEB APPLICATION</span>
+              </div>
+
+              <h3 class="project-title">University PYQ Portal</h3>
+
+              <p class="project-desc">
+                A dedicated academic question paper repository built to help engineering students rapidly search, filter by semester and subject, and access past examination papers without cumbersome ad clutter or broken download links.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Responsive UI</span>
+                <span class="tech-tag">Fast Search</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="#contact" class="btn btn-sm btn-outline">
+                  EXPLORE PLATFORM
+                  <span class="arrow-icon">→</span>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                  SOURCE CODE
+                  <span class="arrow-icon">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: FasalIQ -->
+          <article class="project-card reveal delay-2">
+            <div class="project-preview">
+              <div class="project-preview-mockup">
+                <div class="mockup-header">
+                  <span class="mockup-status-dot">SIH PROTOTYPE</span>
+                  <span>VITE + REACT ENGINE</span>
+                </div>
+                <div class="mockup-center">
+                  <h4>FasalIQ Agri-Tech</h4>
+                  <p>AI CROP YIELD & OPTIMIZATION</p>
+                </div>
+                <div class="mockup-footer">
+                  <span>SOIL & WEATHER METRICS</span>
+                  <span>PRECISION CALCULATORS</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-meta-bar">
+                <span class="project-index">03 / AI HACKATHON</span>
+                <span class="project-type">AGRICULTURAL INTELLIGENCE</span>
+              </div>
+
+              <h3 class="project-title">FasalIQ Crop Intelligence</h3>
+
+              <p class="project-desc">
+                A Smart India Hackathon agricultural optimization platform delivering algorithmic crop yield predictions, multi-crop comparisons, fertilizer requirement estimation, and irrigation planning calibrated for Indian farming conditions.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Vite</span>
+                <span class="tech-tag">Tailwind CSS</span>
+                <span class="tech-tag">Algorithms</span>
+                <span class="tech-tag">Local Storage</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="#contact" class="btn btn-sm btn-outline">
+                  VIEW PROTOTYPE
+                  <span class="arrow-icon">→</span>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                  SOURCE CODE
+                  <span class="arrow-icon">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Readyline -->
+          <article class="project-card reveal delay-3">
+            <div class="project-preview">
+              <div class="project-preview-mockup">
+                <div class="mockup-header">
+                  <span class="mockup-status-dot">COMMAND HUB</span>
+                  <span>CRISIS RESPONSE</span>
+                </div>
+                <div class="mockup-center">
+                  <h4>Readyline Command</h4>
+                  <p>DISASTER READINESS & RISK REGISTER</p>
+                </div>
+                <div class="mockup-footer">
+                  <span>INCIDENT WORKFLOWS</span>
+                  <span>ZERO-DEPENDENCY RUNTIME</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-meta-bar">
+                <span class="project-index">04 / CIVIC RESILIENCE</span>
+                <span class="project-type">DASHBOARD ARCHITECTURE</span>
+              </div>
+
+              <h3 class="project-title">Readyline Operations Center</h3>
+
+              <p class="project-desc">
+                A streamlined disaster readiness and community coordination dashboard featuring dynamic risk registers, operational action checklists, team role assignments, and emergency resource management workflows.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Modular CSS</span>
+                <span class="tech-tag">State Management</span>
+                <span class="tech-tag">Accessible DOM</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="#contact" class="btn btn-sm btn-outline">
+                  VIEW DETAILS
+                  <span class="arrow-icon">→</span>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                  SOURCE CODE
+                  <span class="arrow-icon">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         7. NEW VIBES SECTION — DEVELOPER BANNER
+         ====================================================================== -->
+    <section class="vibes-banner" id="journey-banner">
+      <div class="container vibes-grid">
+        <!-- Left Side: Editorial Typography -->
+        <div class="vibes-left">
+          <span class="kicker kicker-light reveal">CURRENT FOCUS</span>
+
+          <h2 class="vibes-title title-display reveal delay-1">
+            BUILD.<br />LEARN.<br />CREATE.
+          </h2>
+
+          <p class="vibes-desc reveal delay-2">
+            Always exploring better ways to build useful, accessible, and engaging digital experiences.
+          </p>
+
+          <div class="reveal delay-3">
+            <a href="#journey" class="btn btn-light">
+              EXPLORE MY JOURNEY
+              <span class="arrow-icon">→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Side: Luxury Editorial Monolith Graphic -->
+        <div class="vibes-right reveal delay-2">
+          <div class="vibes-monolith">
+            <div class="monolith-header">
+              <span>MANIFESTO</span>
+              <span>DEV // 2026</span>
+            </div>
+
+            <div class="monolith-core">
+              <div class="monolith-badge">SR</div>
+              <p class="monolith-quote">
+                "CODE AS A CRAFT. DESIGN AS A COMMITMENT."
+              </p>
+            </div>
+
+            <div class="monolith-footer">
+              <span>SHIVAM RAJPUT</span>
+              <span>INDIA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         8. SKILLS SECTION ("TOOLS OF THE TRADE")
+         ====================================================================== -->
+    <section class="skills-section" id="skills">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header-editorial">
+          <div class="section-header-left">
+            <span class="kicker reveal">TECHNICAL PROFICIENCY</span>
+            <h2 class="section-title title-display reveal delay-1">TOOLS OF THE TRADE</h2>
+          </div>
+          <p class="section-subtitle reveal delay-2">
+            A focused breakdown of core languages, libraries, and developer tools applied across real projects.
+          </p>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid">
+          <!-- Skill Category 1: Frontend -->
+          <div class="skill-category-card reveal">
+            <div class="skill-cat-header">
+              <span class="skill-cat-index">01</span>
+              <h3 class="skill-cat-title">FRONTEND</h3>
+            </div>
+            <div class="skill-tags-list">
+              <div class="skill-tag-item">
+                <span>HTML5 (Semantic)</span>
+                <span class="skill-level-dot"></span>
+              </div>
+              <div class="skill-tag-item">
+                <span>CSS3 (Flex / Grid / Tokens)</span>
+                <span class="skill-level-dot"></span>
+              </div>
+              <div class="skill-tag-item">
+                <span>JavaScript (ES6+)</span>
+                <span class="skill-level-dot"></span>
+              </div>
+              <div class="skill-tag-item">
+                <span>React</span>
+                <span class="skill-level-dot"></span>
+              </div>
+              <div class="skill-tag-item">
+                <span>Tailwind CSS</span>
+                <span class="skill-level-dot"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Category 2: Programming -->
+          <div class="skill-category-card reveal delay-1">
+            <div class="skill-cat-header">
+              <span class="skill-cat-index">02</span>
+              <h3 class="skill-cat-title">PROGRAMMING</h3>
+            </div>
+            <div class="skill-tags-list">
+              <div class="skill-tag-item">
+                <span>Java</span>
+                <span class="skill-level-dot"></span>
+              </div>
+              <div class="skill-tag-item">
+                <span>C</span>
+                <span class="skill-level-dot"></span>
+              </div>
+              <div class="skill-tag-item">
+                <span>Data Structures</span>
+                <span class="skill-level-dot"></span>
+              </div>
+              <div class="skill-tag-item">
+                <span>OOP Concepts</span>
+                <span class="skill-level-dot"></span>
+              </div>
+              <div class="skill-tag-item">
+                <span>Algorithmic Logic</span>
+                <span class="skill-level-dot"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Category 3: Backend & Architecture -->
+          <div class="skill-category-card reveal delay-2">
+            <div class="skill-cat-header">
+              <span class="skill-cat-index">03</span>
+              <h3 class="skill-cat-title">BACKEND & DATA</h3>
+            </div>
+            <div class="skill-tags-list">
+              <div class="skill-tag-item">
+                <span>Node.js</span>
+                <span class="skill-level-dot"></span>
+              </div>
+              <div class="skill-tag-item">
+                <span>Express</span>
+                <span class="skill-level-dot"></span>
+              </div>
+              <div class="skill-tag-item">
+                <span>RESTful APIs</span>
+                <span class="skill-level-dot"></span>
+              </div>
+              <div class="skill-tag-item">
+                <span>WebSockets Telemetry</span>
+                <span class="skill-level-dot"></span>
+              </div>
+              <div class="skill-tag-item">
+                <span>JSON Schema & Data</span>
+                <span class="skill-level-dot"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Category 4: Tools & Workflow -->
+          <div class="skill-category-card reveal delay-3">
+            <div class="skill-cat-header">
+              <span class="skill-cat-index">04</span>
+              <h3 class="skill-cat-title">TOOLS & WORKFLOW</h3>
+            </div>
+            <div class="skill-tags-list">
+              <div class="skill-tag-item">
+                <span>Git Version Control</span>
+                <span class="skill-level-dot"></span>
+              </div>
+              <div class="skill-tag-item">
+                <span>GitHub Collaboration</span>
+                <span class="skill-level-dot"></span>
+              </div>
+              <div class="skill-tag-item">
+                <span>VS Code</span>
+                <span class="skill-level-dot"></span>
+              </div>
+              <div class="skill-tag-item">
+                <span>Vite Bundler</span>
+                <span class="skill-level-dot"></span>
+              </div>
+              <div class="skill-tag-item">
+                <span>Browser DevTools</span>
+                <span class="skill-level-dot"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         9. EXPERIENCE / LEARNING JOURNEY TIMELINE
+         ====================================================================== -->
+    <section class="journey-section" id="journey">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header-editorial">
+          <div class="section-header-left">
+            <span class="kicker reveal">MILESTONES</span>
+            <h2 class="section-title title-display reveal delay-1">THE JOURNEY SO FAR</h2>
+          </div>
+          <p class="section-subtitle reveal delay-2">
+            Key academic milestones, project breakthroughs, and technical learning horizons.
+          </p>
+        </div>
+
+        <!-- Editorial Timeline -->
+        <div class="timeline">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-date-col">
+              <span class="timeline-date">2024 — PRESENT</span>
+              <span class="timeline-node" aria-hidden="true"></span>
+            </div>
+            <div class="timeline-content-col">
+              <h3 class="timeline-role">B.Tech Computer Science & Engineering</h3>
+              <span class="timeline-org">UNIVERSITY ACADEMICS // INDIA</span>
+              <p class="timeline-desc">
+                Building a rigorous theoretical and practical foundation in algorithms, data structures, operating systems, computer networking, and software engineering.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item reveal delay-1">
+            <div class="timeline-date-col">
+              <span class="timeline-date">2024 — 2025</span>
+              <span class="timeline-node" aria-hidden="true"></span>
+            </div>
+            <div class="timeline-content-col">
+              <h3 class="timeline-role">Programming Foundations & OOP</h3>
+              <span class="timeline-org">JAVA, C & PROBLEM SOLVING</span>
+              <p class="timeline-desc">
+                Strengthened analytical problem-solving and software architecture concepts using Java and C, applying modular design and structured data algorithms.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item reveal delay-2">
+            <div class="timeline-date-col">
+              <span class="timeline-date">2025</span>
+              <span class="timeline-node" aria-hidden="true"></span>
+            </div>
+            <div class="timeline-content-col">
+              <h3 class="timeline-role">Modern Web Architecture</h3>
+              <span class="timeline-org">RESPONSIVE DESIGN & INTERACTIVE UIS</span>
+              <p class="timeline-desc">
+                Transitioned to production web development, mastering semantic HTML5, modern CSS layouts (Grid, Flexbox, Custom Properties), and vanilla JavaScript manipulation. Developed the University PYQ portal.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 4 -->
+          <div class="timeline-item reveal delay-3">
+            <div class="timeline-date-col">
+              <span class="timeline-date">2025 — 2026</span>
+              <span class="timeline-node" aria-hidden="true"></span>
+            </div>
+            <div class="timeline-content-col">
+              <h3 class="timeline-role">Applied AI & Systems Engineering</h3>
+              <span class="timeline-org">SIH HACKATHON & REAL-TIME IOT</span>
+              <p class="timeline-desc">
+                Engineered complex platforms combining IoT hardware and AI services: created the NER LandslideGuard AI early warning system and built FasalIQ for the Smart India Hackathon.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         10. CONTACT SECTION
+         ====================================================================== -->
+    <section class="contact-section" id="contact">
+      <div class="container contact-layout">
+        <!-- Left Side: Editorial Outreach -->
+        <div class="contact-left">
+          <span class="kicker reveal">DIRECT OUTREACH</span>
+
+          <h2 class="contact-headline title-display reveal delay-1">
+            HAVE AN IDEA?<br />LET'S BUILD IT.
+          </h2>
+
+          <p class="contact-subtext reveal delay-2">
+            I'm always interested in learning, collaborating, and working on meaningful digital projects. Whether you have a project in mind or simply want to connect, feel free to reach out.
+          </p>
+
+          <div class="contact-methods reveal delay-3">
+            <div class="contact-item">
+              <span class="contact-label">EMAIL DIRECTLY</span>
+              <a href="mailto:suburajput800@gmail.com" class="contact-val">
+                suburajput800@gmail.com
+                <span class="arrow-icon">↗</span>
+              </a>
+            </div>
+
+            <div class="contact-item">
+              <span class="contact-label">LOCATION</span>
+              <span class="contact-val">India (UTC +5:30)</span>
+            </div>
+
+            <div class="contact-item">
+              <span class="contact-label">SOCIAL PROFILES</span>
+              <div style="display: flex; gap: 1.5rem; margin-top: 0.25rem;">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-val" style="font-size: 0.9375rem;">
+                  GITHUB <span class="arrow-icon">↗</span>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-val" style="font-size: 0.9375rem;">
+                  LINKEDIN <span class="arrow-icon">↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Validated Contact Form -->
+        <div class="contact-right reveal delay-2">
+          <div class="contact-form-wrap">
+            <form id="portfolio-contact-form" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name" class="form-label">YOUR NAME</label>
+                <input
+                  type="text"
+                  id="contact-name"
+                  name="name"
+                  class="form-input"
+                  placeholder="e.g. Alex Morgan"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">EMAIL ADDRESS</label>
+                <input
+                  type="email"
+                  id="contact-email"
+                  name="email"
+                  class="form-input"
+                  placeholder="alex@domain.com"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">MESSAGE</label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  class="form-textarea"
+                  placeholder="Tell me about your project, ideas, or timeline..."
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+
+              <div id="form-status-message" class="form-status" role="alert"></div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                SEND MESSAGE
+                <span class="arrow-icon">→</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         11. FOOTER
+         ====================================================================== -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <span>SHIVAM — DEVELOPER PORTFOLIO</span>
+        </div>
+
+        <nav class="footer-center" aria-label="Footer Navigation">
+          <a href="#hero" class="footer-link">HOME</a>
+          <a href="#about" class="footer-link">ABOUT</a>
+          <a href="#projects" class="footer-link">PROJECTS</a>
+          <a href="#skills" class="footer-link">SKILLS</a>
+          <a href="#contact" class="footer-link">CONTACT</a>
+          <a href="./creativity.html" class="footer-link">CREATIVE</a>
+        </nav>
+
+        <div class="footer-right">
+          <span>DESIGNED &amp; BUILT WITH CARE &bull; &copy; <span id="current-year">2026</span></span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Interactive Script -->
+    <script src="main.js"></script>
+  </body>
+</html>

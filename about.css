@@ -1,0 +1,328 @@
+/* ==========================================================================
+   SHIVAM RAJPUT — ABOUT ME PAGE (LUXURY EDITORIAL AESTHETIC)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Syne:wght@500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg-primary: #fbfbfa;
+  --bg-card: #f2f2ee;
+  --bg-dark: #0a0a0a;
+  --text-primary: #0a0a0a;
+  --text-secondary: #4a4a46;
+  --text-muted: #858580;
+  --text-light: #fbfbfa;
+  --border-light: rgba(10, 10, 10, 0.1);
+  --border-dark: rgba(255, 255, 255, 0.12);
+  --font-display: 'Syne', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --font-mono: 'Space Grotesk', monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  height: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: rgba(251, 251, 250, 0.92);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border-light);
+  z-index: 1000;
+}
+
+.logo {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.logo span {
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: var(--text-primary);
+}
+
+.hire-btn {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  padding: 0.6rem 1.4rem;
+  background: var(--bg-dark);
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+  border: 1px solid var(--bg-dark);
+}
+
+.hire-btn:hover {
+  background: transparent;
+  color: var(--text-primary);
+}
+
+/* About Layout */
+.about {
+  min-height: calc(100vh - 74px);
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  padding: 5rem 7%;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image-box {
+  width: 360px;
+  height: 480px;
+  border: 1px solid var(--border-light);
+  position: relative;
+  background-color: var(--bg-card);
+}
+
+.image-box::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--text-primary);
+  top: 14px;
+  left: 14px;
+  z-index: -1;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%) contrast(1.05);
+}
+
+.about-content {
+  flex: 1.2;
+}
+
+.small-title {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.about-content h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+
+.about-content h1 span {
+  color: var(--text-muted);
+}
+
+.about-content h2 {
+  font-family: var(--font-mono);
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 1.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.about-content p:not(.small-title) {
+  color: var(--text-secondary);
+  line-height: 1.75;
+  margin-bottom: 1.25rem;
+  max-width: 620px;
+}
+
+.info {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  background: var(--bg-card);
+  padding: 1.5rem;
+  border: 1px solid var(--border-light);
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.info-item strong {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.info-item span {
+  font-size: 0.9375rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.resume-btn {
+  display: inline-flex;
+  margin-top: 2rem;
+  padding: 0.85rem 1.75rem;
+  border: 1px solid var(--bg-dark);
+  background: var(--bg-dark);
+  color: var(--text-light);
+  text-decoration: none;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.resume-btn:hover {
+  background: transparent;
+  color: var(--text-primary);
+}
+
+/* Highlights Section */
+.highlights {
+  padding: 6rem 7%;
+  background: var(--bg-dark);
+  color: var(--text-light);
+}
+
+.highlights h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  margin-bottom: 3.5rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.card {
+  padding: 2.5rem 1.75rem;
+  background: #141414;
+  border: 1px solid var(--border-dark);
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
+}
+
+.card h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  color: var(--text-light);
+}
+
+.card p {
+  color: #999;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+  }
+  .info {
+    text-align: left;
+  }
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-links, .hire-btn {
+    display: none;
+  }
+  .image-box {
+    width: 280px;
+    height: 380px;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .info {
+    grid-template-columns: 1fr;
+  }
+}
